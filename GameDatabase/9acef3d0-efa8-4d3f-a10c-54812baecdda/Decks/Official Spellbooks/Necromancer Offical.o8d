@@ -2,7 +2,7 @@
 <deck game="9acef3d0-efa8-4d3f-a10c-54812baecdda">
   <section name="Mage" shared="False">
     <card qty="1" id="6b830552-8420-4797-bbb5-3ec5bb768265">Necromancer</card>
-    <card qty="1" id="682d3b40-7c08-437b-9c88-16e2f389773f">Necromancer stats</card>
+    <card qty="1" id="682d3b40-7c08-437b-9c88-16e2f389773f">Necromancer Stats</card>
   </section>
   <section name="Attack" shared="False">
     <card qty="2" id="a5386a31-5786-4e70-9482-65657607d802">Acid Ball</card>
@@ -26,7 +26,7 @@
     <card qty="5" id="d40817b6-6574-4d86-b0bf-0f32fb1e49cf">Skeletal Minion</card>
     <card qty="1" id="fb442d50-c831-4da9-bbb8-dace15fea19b">Unstable Zombie</card>
     <card qty="2" id="f4574320-6839-4346-a36f-cad119af8b43">Venomous Zombie</card>
-    <card qty="2" id="b37bdf0c-85f9-4b78-b32a-fe550c37d047">Zombie Brute</card>
+    <card qty="2" id="d0259ea7-fb69-4156-a3a1-a0f7d90c283d">Zombie Brute</card>
     <card qty="4" id="96c21a43-e794-4f23-9408-5c7f2523a4f6">Zombie Crawler</card>
     <card qty="4" id="e91c66db-b4cc-4b38-8427-06dceb2103a0">Zombie Minion</card>
   </section>

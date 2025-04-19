@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<deck game="9acef3d0-efa8-4d3f-a10c-54812baecdda" sleeveid="0">
+<deck game="9acef3d0-efa8-4d3f-a10c-54812baecdda">
   <section name="Mage" shared="False">
     <card qty="1" id="97d362aa-8ea9-4000-a711-45d716b55a47">Siren</card>
-    <card qty="1" id="cd4d2d6e-f65e-4c26-9528-8effec8e4f14">Siren Stats</card>
+    <card qty="1" id="f4ded825-e127-49ba-8f8e-ad105cf5a234">Siren Stats</card>
   </section>
   <section name="Attack" shared="False">
     <card qty="4" id="902698fd-2ca5-4bca-bc08-3d94686cbf19">Swell</card>
@@ -13,9 +13,12 @@
     <card qty="2" id="98f6f10c-267d-451d-bb11-7d149c8d0f9c">Coral Barrier</card>
     <card qty="4" id="5ddf5771-870a-435d-a169-19604b8f5706">Shallow Sea</card>
     <card qty="1" id="2d064201-ca75-4f33-b015-c7bfe44eda4b">Swamp</card>
+    <card qty="1" id="837ef959-dab8-42b1-9bb9-4678efe2ad47">Whirlpool</card>
+    <card qty="1" id="aa2b21a7-fb96-44c9-a2e9-f11389611b5c">Wreck of the Viridian Lace</card>
   </section>
   <section name="Creature" shared="False">
     <card qty="1" id="d6585389-66a4-4d31-93a9-f55cbc411a56">Blightheart</card>
+    <card qty="1" id="994a9a7e-9380-4fab-a59c-44630902abe1">Colossal Crab</card>
     <card qty="1" id="c53cc69d-d104-435b-bd30-873269b0d237">Deptonne Berserker</card>
     <card qty="2" id="2586d903-5bae-4df4-b81a-d884eb82ccd3">Deptonne Bloodshaman</card>
     <card qty="1" id="d7ad8972-ee17-4588-8978-f8c7130e1cc4">Gerard Matranga</card>
@@ -26,6 +29,7 @@
     <card qty="4" id="d44afeb5-76ac-4d0d-863c-7281ba581475">Shoalsdeep Thrasher</card>
     <card qty="1" id="c157cd2e-4e2d-411a-9a37-5e952256b1c9">Shoalsdeep Tidecaller</card>
     <card qty="1" id="4b0e7bf5-e433-4f9d-b161-593b8aa07ddb">Turghut</card>
+    <card qty="1" id="b9ced997-b7fb-4cef-9f57-7264f3fea633">Water Elemental</card>
   </section>
   <section name="Enchantment" shared="False">
     <card qty="2" id="d0ffcf7a-6a98-4028-80d1-5cd2ad708c2a">Ballad of Courage</card>

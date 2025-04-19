@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <deck game="9acef3d0-efa8-4d3f-a10c-54812baecdda">
   <section name="Mage" shared="False">
-    <card qty="1" id="b52ee3c1-ee9f-494c-8c45-55f2b1ff6313">Warlord</card>
-    <card qty="1" id="988facc7-debe-493b-95f0-95f0be0157cb">Warlord Stats</card>
+    <card qty="1" id="b52ee3c1-ee9f-494c-8c45-55f2b1ff6313">Anvil Throne Warlord</card>
+    <card qty="1" id="988facc7-debe-493b-95f0-95f0be0157cb">Anvil Throne Warlord Stats</card>
   </section>
   <section name="Attack" shared="False">
     <card qty="2" id="f8e7349e-4779-447d-a4e7-ab0f2178392a">Hurl Boulder</card>

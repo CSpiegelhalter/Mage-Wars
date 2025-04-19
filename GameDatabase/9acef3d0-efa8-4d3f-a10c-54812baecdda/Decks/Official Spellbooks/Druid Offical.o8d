@@ -2,7 +2,7 @@
 <deck game="9acef3d0-efa8-4d3f-a10c-54812baecdda">
   <section name="Mage" shared="False">
     <card qty="1" id="d20c9d4a-65a7-4018-bffc-16ed0cb62912">Druid</card>
-    <card qty="1" id="df9efcd7-c4d2-4c8c-ac16-ea9eca1f5260">Druid stats</card>
+    <card qty="1" id="df9efcd7-c4d2-4c8c-ac16-ea9eca1f5260">Druid Stats</card>
   </section>
   <section name="Attack" shared="False">
     <card qty="4" id="a5386a31-5786-4e70-9482-65657607d802">Acid Ball</card>
@@ -37,7 +37,7 @@
     <card qty="1" id="ceee5eaa-4aef-4b81-b272-b23d7e15380d">Druid's Leaf Ring</card>
     <card qty="1" id="2fbb95eb-e736-4710-b3d1-7a0a399f5a76">Meditation Amulet</card>
     <card qty="1" id="10e5eda8-f2b6-459f-9309-172251215aa9">Mohktari's Branch</card>
-    <card qty="1" id="94757213-e96f-44b3-a520-7528fa098d74">Veterans Belt</card>
+    <card qty="1" id="94757213-e96f-44b3-a520-7528fa098d74">Veteran's Belt</card>
     <card qty="1" id="6fa5b665-0b7d-4815-9122-09e27b50c7a9">Vinewhip Staff</card>
   </section>
   <section name="Incantation" shared="False">

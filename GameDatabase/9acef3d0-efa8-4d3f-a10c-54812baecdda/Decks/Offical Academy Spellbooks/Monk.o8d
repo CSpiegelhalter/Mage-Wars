@@ -12,7 +12,6 @@
     <card qty="3" id="6d8e3760-f3dd-42fe-b81d-491d674cf568">Projected Leg Sweep</card>
     <card qty="3" id="fe1878d8-a53d-44c1-8180-7218d52e1d3c">Projected Palm</card>
   </section>
-  <section name="Conjuration" shared="False" />
   <section name="Creature" shared="False">
     <card qty="1" id="6d8f90ae-c915-46b5-a668-165f41f4ba3a">Oboko, Sohei Master</card>
     <card qty="2" id="78be4145-492e-4010-af82-55f153309aa3">Sohei Pupil</card>
@@ -36,5 +35,6 @@
     <card qty="1" id="e4c97004-8be5-4a2c-81b7-2b90863f7209">Disperse</card>
     <card qty="2" id="bb25146f-7824-4579-9830-0c933e916e35">Meditation</card>
   </section>
+  <section name="Conjuration" shared="False" />
   <notes><![CDATA[]]></notes>
 </deck>

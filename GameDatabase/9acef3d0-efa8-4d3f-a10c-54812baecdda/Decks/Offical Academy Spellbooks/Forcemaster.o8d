@@ -8,7 +8,6 @@
     <card qty="1" id="85e1046a-b4cd-40b4-9b08-8ba1788229bf">Force Daggers</card>
     <card qty="2" id="c381f725-e3c6-407e-8039-beab331869d6">Telekinetic Bolt</card>
   </section>
-  <section name="Conjuration" shared="False" />
   <section name="Creature" shared="False">
     <card qty="2" id="252db70f-53d3-4c92-82f3-8f0832c73169">Eye of Itadjet</card>
     <card qty="2" id="5f798d36-1d1d-4e14-a79e-3ad41dd95141">Force Caracal</card>
@@ -35,8 +34,9 @@
     <card qty="2" id="c8ada27f-b20e-4a89-812a-48ea97ab24fd">Symbiotic Orb</card>
   </section>
   <section name="Incantation" shared="False">
-    <card qty="1" id="dff45020-4e2c-4fe1-87a5-52741a6c2794">Disperse</card>
+    <card qty="2" id="dff45020-4e2c-4fe1-87a5-52741a6c2794">Disperse</card>
     <card qty="1" id="427cb8da-3db4-4836-8ecd-7f3ea277d21a">Siphon Energy</card>
   </section>
+  <section name="Conjuration" shared="False" />
   <notes><![CDATA[]]></notes>
 </deck>

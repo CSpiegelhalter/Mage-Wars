@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <deck game="9acef3d0-efa8-4d3f-a10c-54812baecdda">
   <section name="Mage" shared="False">
-    <card qty="1" id="4f27a0aa-8ef2-42cc-ae24-1ae0bf0f8a64">Warlock</card>
-    <card qty="1" id="8c17a03b-4800-4253-ac32-925581fdbbe0">Warlock Stats</card>
+    <card qty="1" id="4f27a0aa-8ef2-42cc-ae24-1ae0bf0f8a64">Adramelech Warlock</card>
+    <card qty="1" id="8c17a03b-4800-4253-ac32-925581fdbbe0">Adramelech Warlock Stats</card>
   </section>
   <section name="Attack" shared="False">
     <card qty="2" id="675c07ff-cbe3-462b-bda2-81c95812f026">Devil's Trident</card>
@@ -21,9 +21,9 @@
     <card qty="1" id="2bb70070-7b6e-4bdf-b75a-e739810ff3ac">Blood Demon</card>
     <card qty="2" id="d6769d21-6095-43b4-a5c3-cbfd6c5f9436">Firebrand Imp</card>
     <card qty="1" id="4ed5ed50-3c2a-4513-ae98-c954766e5a79">Flaming Hellion</card>
-    <card qty="1" id="a79cacbc-183e-4d91-9157-b47c7eac8d41">Infernian Scourger</card>
+    <card qty="2" id="a79cacbc-183e-4d91-9157-b47c7eac8d41">Infernian Scourger</card>
     <card qty="1" id="8c26f3e9-2124-4fc0-b752-a68ad740b088">Sersiryx, Imp Familiar</card>
-    <card qty="5" id="d3d74607-ebe1-4533-a7b6-e5a758e10e83">Wildfire Imp</card>
+    <card qty="4" id="d3d74607-ebe1-4533-a7b6-e5a758e10e83">Wildfire Imp</card>
   </section>
   <section name="Enchantment" shared="False">
     <card qty="2" id="fe74477b-1858-42a7-a5de-739f965944c3">Adramelech's Touch</card>
@@ -46,7 +46,7 @@
     <card qty="1" id="42f6de77-bab3-4be7-a0e1-567957dc37ba">Fireshaper Ring</card>
     <card qty="1" id="1257b363-d905-4ebe-94c8-cd220565b28c">Gauntlets of Strength</card>
     <card qty="2" id="5d2f72e1-7aaf-4931-b0e0-f11cce928313">Lash of Hellfire</card>
-    <card qty="1" id="86d43008-5faf-4eaf-a66a-cdd985f45d5f">Mage Wand</card>
+    <card qty="1" id="452f860f-b456-48e1-ae88-2870cf0545c6">Mage Wand</card>
     <card qty="1" id="983a31d2-4e37-441d-a39e-3088f9b3d84c">Regrowth Belt</card>
     <card qty="1" id="91180ca9-e88e-4355-854a-49e78e2b4ec6">Ring of Curses</card>
   </section>

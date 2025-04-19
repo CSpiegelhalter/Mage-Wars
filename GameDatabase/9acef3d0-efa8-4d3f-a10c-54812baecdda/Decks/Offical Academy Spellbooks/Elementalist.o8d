@@ -12,20 +12,19 @@
   </section>
   <section name="Conjuration" shared="False">
     <card qty="1" id="c2dff24b-ab8e-4ef0-8d55-b8ac6225ca03">Dense Fog</card>
-    <card qty="1" id="89169377-cf5c-4e2f-9590-3052a08bacf4">Hellscape</card>
     <card qty="1" id="e1691086-4b27-4961-83a8-60d8217e97fb">Ice Spikes</card>
     <card qty="1" id="4c12c7d1-7103-43b2-9c86-b8f9ae7f848d">Thunderstorm</card>
     <card qty="1" id="04c203b7-c9f8-4f62-8a2d-188af552e647">Volcano</card>
   </section>
   <section name="Creature" shared="False">
     <card qty="1" id="a5089f11-308d-4f6c-987b-753ac9cb6c55">Acid Ooze</card>
-    <card qty="1" id="a5257374-8791-43db-9f60-732515b42a25">Ice Golem</card>
+    <card qty="2" id="a5257374-8791-43db-9f60-732515b42a25">Ice Golem</card>
     <card qty="2" id="bcc8be73-b8f5-4584-aef1-8050f1aab5bb">Magma Sprite</card>
     <card qty="1" id="cde059b6-7fdb-4a4c-8ecc-2530f2ea0136">Mud Golem</card>
     <card qty="2" id="34d6a55f-8c87-4055-9f81-ee8689463b7c">Rock Golem</card>
   </section>
   <section name="Enchantment" shared="False">
-    <card qty="1" id="648b2d6d-d69f-417f-b666-637bcbc67c21">Deep Freeze</card>
+    <card qty="2" id="648b2d6d-d69f-417f-b666-637bcbc67c21">Deep Freeze</card>
     <card qty="2" id="2d87d057-a5d1-4be6-aec8-66caeb453977">Frost Trap</card>
   </section>
   <section name="Equipment" shared="False">

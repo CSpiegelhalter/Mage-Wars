@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<deck game="9acef3d0-efa8-4d3f-a10c-54812baecdda">
+  <section name="Mage" shared="False">
+    <card qty="1" id="30a60bad-bf32-46a2-a69e-e949d288b7ac">Paladin</card>
+    <card qty="1" id="7dba45df-7c80-42a2-8cdc-2c02b170fd8c">Paladin Stats</card>
+  </section>
+  <section name="Attack" shared="False">
+    <card qty="4" id="fbc5533d-ab11-4625-9667-7aa848bbf58d">Luminous Blast</card>
+  </section>
+  <section name="Conjuration" shared="False">
+    <card qty="4" id="4db00fb0-3444-49c7-9a5a-25bac97e290e">Consecrated Ground</card>
+    <card qty="1" id="b79e9334-a55e-4ce6-b366-1029ebe6917d">Crusade Banner</card>
+    <card qty="1" id="f98c74f2-8acd-4dae-973f-2cee5509f41a">Malakai's Basilica</card>
+    <card qty="1" id="d07adefb-1723-48d3-ab24-aa9e09fb3d74">Pillar of Righteous Flame</card>
+    <card qty="1" id="6e57accb-771a-4476-90ef-ee35aa736cd4">Steep Hill</card>
+    <card qty="1" id="ea9335e0-8d99-429e-a055-f370b552ed26">Temple of Meraveran</card>
+  </section>
+  <section name="Creature" shared="False">
+    <card qty="1" id="cf0d8e35-24e6-4183-9243-ab9ae705703f">Alandell, the Blue Knight</card>
+    <card qty="1" id="80245974-e200-4887-8763-61b7eeff9f2a">Artemis, Dawnbreaker's Eye</card>
+    <card qty="1" id="0eaf67cf-6b23-4e9c-906b-383fd6bd1e07">Cassiel, Shield of Bim-Shalla</card>
+    <card qty="3" id="0bd874fa-f08f-41bd-8857-4a99ecb8ae5b">Crusader Griffin</card>
+    <card qty="2" id="45a105e6-a839-4e6f-a0ac-59320683c26a">Dawnbreaker's Initiate</card>
+    <card qty="1" id="4cc2fb5c-3d6a-441d-b58d-acedde38b5f6">Dorseus, Stallion of Westlock</card>
+    <card qty="1" id="3da53bb4-fef7-421e-b6c8-99df185f2914">Eligor Larington</card>
+    <card qty="3" id="a15cfb56-c7a8-45b6-8b60-931d5d50d9e0">Knight of the Red Helm</card>
+    <card qty="2" id="e6fe44d6-174e-4d6b-8a65-450d3efe9667">Light of Dawn</card>
+    <card qty="2" id="76339700-716d-42f7-b265-e7f3c12e0f12">Noble Vanguard</card>
+    <card qty="1" id="f3aeaa12-ed03-4237-9287-74751c22f238">Temple High Guard</card>
+  </section>
+  <section name="Enchantment" shared="False">
+    <card qty="1" id="d0ffcf7a-6a98-4028-80d1-5cd2ad708c2a">Ballad of Courage</card>
+    <card qty="2" id="327c59fe-1cab-4f4e-8145-31db7d3b8989">Blind</card>
+    <card qty="3" id="d9830ac6-81d1-4f78-b0c4-7c94cea29733">Eye for an Eye</card>
+    <card qty="2" id="40a892b7-ef42-4242-8e2f-68dfaa75b98b">Healing Madrigal</card>
+    <card qty="3" id="d29324b6-58d4-42d3-8ccd-d9df42b91d4a">Knight's Courage</card>
+    <card qty="2" id="7d30fdf8-a1d1-47cd-9c58-2eda8621055b">Life Link</card>
+    <card qty="1" id="e5ddd1db-e578-4647-b3fa-c75d55f1171c">Song of Love</card>
+  </section>
+  <section name="Equipment" shared="False">
+    <card qty="1" id="e907ba99-6cb5-4954-a61e-6359378c391f">Champion's Gauntlets</card>
+    <card qty="2" id="3ed81c7f-e02d-483e-8134-3169ab51d5e6">Dawn's Bastion</card>
+    <card qty="1" id="e8bcb017-6e30-4893-94de-81fef6437659">Helm of Justice</card>
+    <card qty="1" id="b531cb09-e8cd-41c5-869b-e71136764219">Paladin's Cloak</card>
+    <card qty="2" id="1d471db4-abb6-4638-9f2b-b2b501ecf61c">Radiant Breastplate</card>
+    <card qty="1" id="ff9058e5-0347-4fe6-a955-4e2d24cd7107">Signet of the Dawnbreaker</card>
+    <card qty="1" id="3829b796-539f-4389-bc71-e03581896913">Steadfast Boots</card>
+    <card qty="2" id="6bbd7b17-4b41-4d47-989c-aff6290f8ac8">Sword of Radiance</card>
+  </section>
+  <section name="Incantation" shared="False">
+    <card qty="2" id="9fe70da8-45c7-4319-8e3e-085e8872186a">Dispel</card>
+    <card qty="2" id="cb4e9753-09d9-4fe2-8ee8-9a69590934be">Dissolve</card>
+    <card qty="3" id="da622c97-c498-450b-94bd-a8546d4bdc0f">Lesser Teleport</card>
+    <card qty="3" id="3401ad6d-e87f-4775-a573-3398cb348fd1">Martyr's Restoration</card>
+    <card qty="2" id="efe9ca2d-9894-4e13-b733-3088963670be">Mending Wave</card>
+    <card qty="3" id="b25450be-9922-4dba-9d89-244254749195">Overextend</card>
+    <card qty="1" id="6a624136-aa0f-46bb-a4a9-8758b96bb8ae">Smite</card>
+  </section>
+  <notes><![CDATA[]]></notes>
+</deck>
