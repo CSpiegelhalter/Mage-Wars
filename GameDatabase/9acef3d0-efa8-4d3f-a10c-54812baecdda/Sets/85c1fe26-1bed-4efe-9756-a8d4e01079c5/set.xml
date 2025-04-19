@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<set gameId="9acef3d0-efa8-4d3f-a10c-54812baecdda" gameVersion="3.0.0.0" id="85c1fe26-1bed-4efe-9756-a8d4e01079c5" name="Mage Wars Academy" version="3.0.0.0" xmlns:noNamespaceSchemaLocation="CardSet.xsd">
+<set gameId="9acef3d0-efa8-4d3f-a10c-54812baecdda" gameVersion="3.1.0.0" id="85c1fe26-1bed-4efe-9756-a8d4e01079c5" name="Mage Wars Academy" version="3.1.0.0" xmlns:noNamespaceSchemaLocation="CardSet.xsd">
 	<cards>
 
 
-		<!--Mage and Mage Ability Cards-->
+
 		<card id="0a13b5b8-a37b-43d3-877e-9972e4313387" name="Academy Beastmaster">
 			<property name="Type" value="Creature"/>
 			<property name="Subtype" value="Mage"/>
@@ -30,7 +30,7 @@
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="24"/>
@@ -68,7 +68,7 @@ Once per round, when the Beastmaster summons a Level 1 <i>animal</i> creature, h
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="23"/>
@@ -105,7 +105,7 @@ Once per round, when you cast a <i>potion</i>, you may pay 1 mana to place 1 add
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="AirGlyphInactive,1;EarthGlyphInactive,1;FireGlyphInactive,1;WaterGlyphInactive,1"/>			
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="22"/>
@@ -143,7 +143,7 @@ When the Elementalist casts a spell he is trained in, he may activate the Glyph 
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>			
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="22"/>
@@ -182,7 +182,7 @@ If you do, the attacking creature gains <b>Melee +2</b> for this attack.</proper
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ki,2"/>
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="25"/>
@@ -222,7 +222,7 @@ Ki may be spent to augment specific spells and abilities.</property>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>			
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="23"/>
@@ -258,7 +258,7 @@ Once per round, when an enemy Living creature is destroyed, you may remove up to
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="21"/>
@@ -295,7 +295,7 @@ Whenever the Priestess casts or reveals a <i>healing</i> or <i>protection</i> sp
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>			
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="26"/>
@@ -331,7 +331,7 @@ Once per round, when a friendly <i>demon</i> creature attacks, during the Roll D
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>			
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="24"/>
@@ -367,7 +367,7 @@ If you control a revealed <i>formation</i>, reduce the cost of this ability by 1
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="Attack" value="{'name':'Basic Melee Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Channeling" value="7"/>
 			<property name="Armor" value="0"/>
 			<property name="Life" value="23"/>
@@ -380,7 +380,7 @@ When you reveal an enchantment with the <b>Dissipate X</b> trait, you may pay ma
 		</card>
 
 
-		<!--Equipment Spells-->
+
 		<card id="bd5ed44d-b6cc-4526-b924-f3a7ef53fc06" name="Amulet of Attunement">
 			<property name="Type" value="Equipment"/>
 			<property name="Subtype" value="Mana"/>
@@ -391,7 +391,7 @@ When you reveal an enchantment with the <b>Dissipate X</b> trait, you may pay ma
 			<property name="Level" value="1/1/1/1"/>
 			<property name="nativeTraits" value="{'Elementalist Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -412,7 +412,7 @@ When you reveal an enchantment with the <b>Dissipate X</b> trait, you may pay ma
 			<property name="nativeTraits" value="{'Holy Mage Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Aegis':[1]}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -435,7 +435,7 @@ Each Upkeep Phase, you may move 1 damage from a friendly Living creature in this
 			<property name="bAttack" value="{'name':'Dart','action type':'Quick','range type':'Ranged','range':[0,1],'dice':1,'Piercing':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -459,7 +459,7 @@ Quick | Range 0-1 | 1d6 | Piercing +2</property>
 			<property name="bAttack" value="{'name':'Crane\'s Reach','source type':'Equipment','academyWeapon':True,'action type':'Quick','range type':'Melee','range':[0,0],'dice':3,'Reach':True}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="bTraits" value="{'boStaff':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -485,7 +485,7 @@ If this Mage is level 5 or higher, Bo Staff rolls an additional attack die.</pro
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Armor':1,'bCuirass':True}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -507,7 +507,7 @@ The first time this Mage is <b>melee</b> attacked each round, his attacker recei
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1;Charge,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -532,7 +532,7 @@ When there are no Charge tokens remaining on Cleansing Potion, destroy it.</prop
 			<property name="nativeTraits" value="{'Fire Mage Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'cloakOfFire':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -556,7 +556,7 @@ On a roll of 7+, place a <b>Burn</b> condition marker on the attacker if they do
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Discount':[{'target':{'Subtype':['Command', 'Soldier']}, 'Qty':1,'Caster':'Mage','Reveal':True}]}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -578,7 +578,7 @@ On a roll of 7+, place a <b>Burn</b> condition marker on the attacker if they do
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1;Corrode,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -602,7 +602,7 @@ When there are no Charge tokens remaining on Corrosive Concoction, destroy it.</
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'dampCloak':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -624,7 +624,7 @@ When there are no Charge tokens remaining on Corrosive Concoction, destroy it.</
 			<property name="nativeTraits" value="{'Warlock Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Piercing':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -647,7 +647,7 @@ Some are forged with flesh and spirit, and bound with rage and malice.</i></prop
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{'Armor':1}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -670,7 +670,7 @@ X = the condition's removal cost.</property>
 			<property name="bAttack" value="{'name':'Dragon\'s Bite','source type':'Equipment','academyWeapon':True,'action type':'Quick','range type':'Melee','range':[0,0],'dice':3,'effects':{7: ['Burn']}}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -695,7 +695,7 @@ If this Mage is level 5 or higher, Dragon's Lance rolls an additional attack die
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -718,7 +718,7 @@ If you do, place a Burn condition on the attacker.</property>
 			<property name="bAttack" value="{'name':'Elemental Resonance','source type':'Equipment','academyWeapon':True,'action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -742,7 +742,7 @@ If this Mage is level 5 or greater, Elemental Staff rolls an additional attack d
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Beastmaster Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -762,7 +762,7 @@ If this Mage is level 5 or greater, Elemental Staff rolls an additional attack d
 			<property name="School" value="Dark"/>
 			<property name="Level" value="1"/>
 			<property name="bTraits" value="{'eyeOfBael':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -785,7 +785,7 @@ His eye watches me always."
 			<property name="bAttack" value="{'name':'Righteous Strike','source type': 'Equipment','academyWeapon':True,'action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -809,7 +809,7 @@ If this Mage is level 5 or greater, the Righteous Strike attack rolls an additio
 			<property name="nativeTraits" value="{'Forcemaster Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'ForceArmor':True, 'Armor':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -832,7 +832,7 @@ Attacks targting this Mage gain the <b>Piercing -2</b> trait.</property>
 			<property name="bAttack" value="{'name':'Short Blade','source type':'Equipment','academyWeapon':True,'action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -854,7 +854,7 @@ Quick | Melee | 3d6</property>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -877,7 +877,7 @@ When Golden Shield successfully avoids an attack, place "1" damage counters on i
 			<property name="nativeTraits" value="{'Mind Mage Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -899,7 +899,7 @@ When Golden Shield successfully avoids an attack, place "1" damage counters on i
 			<property name="nativeTraits" value="{'Warlock Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -923,7 +923,7 @@ Quick | Melee | 3d6 | d12 8+ = Burn</property>
 			<property name="nativeTraits" value="{'Mind Mage Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Elusive':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -945,7 +945,7 @@ Their weave magnifies ambient magic and dulls the sense of those nearby.</i></pr
 			<property name="bAttack" value="{'name':'Slash','source type':'Equipment','academyWeapon':True,'action type':'Quick','range type':'Melee','range':[0,0],'dice':3,'Piercing':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -968,7 +968,7 @@ If your Mage is level 5 or higher, Ivarium Halberd rolls an additional attack di
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -989,7 +989,7 @@ If your Mage is level 5 or higher, Ivarium Halberd rolls an additional attack di
 			<property name="bAttack" value="{'name':'Curved Blade','academyWeapon':True,'source type':'Equipment','action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1013,7 +1013,7 @@ If your Mage is level 5 or higher, Ivarium Halberd rolls an additional attack di
 			<property name="bAttack" value="{'name':'Serrated Edge','action type':'Quick','range type':'Ranged','range':[0,1],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1036,7 +1036,7 @@ Quick | Ranged 0-1 | 2d6</property>
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Armor':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1060,7 +1060,7 @@ We find it far more useful."
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Armor':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1083,7 +1083,7 @@ Might as well be something functional."
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Armor':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1107,7 +1107,7 @@ If it keeps you alive, who cares if it's scratched or faded?"
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'LivingArmor':True}"/>
 			<property name="spawnMarkers" value="Armor,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1132,7 +1132,7 @@ During the Upkeep Phase, you may pay 1 mana for Living Armor to gain 2 <b>Armor 
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Armor':1}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1153,7 +1153,7 @@ During the Upkeep Phase, you may pay 1 mana for Living Armor to gain 2 <b>Armor 
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1;Melee,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1178,7 +1178,7 @@ When there are no Charge tokens remaining on Rage Tonic, destroy it.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1;Charge,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1201,7 +1201,7 @@ When there are no Charge tokens remaining on Ramses' Black Death, destory it.</p
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Wizard Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1224,7 +1224,7 @@ However, with a little mana one can slip right through.</i></property>
 			<property name="bAttack" value="{'name':'Arrow of Light','source type':'Equipment','academyWeapon':True,'action type':'Full','range type':'Ranged','range':[0,1],'damage type':'Light','dice':2,'Piercing':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1248,7 +1248,7 @@ If this Mage is Level 5 or greater, the Arrow of Light attack rolls an additiona
 			<property name="nativeTraits" value="{'Monk Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'ringOfKi':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1270,7 +1270,7 @@ If you do, gain 2 addtional Ki.</property>
 			<property name="bAttack" value="{'name':'Eldritch Bash','source type':'Equipment','academyWeapon':True,'action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1294,7 +1294,7 @@ If this Mage is level 5 or higher, Rod of the Arcanum rolls an additional attack
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1317,7 +1317,7 @@ If that creature is a <i>mummy</i>, reduce the cost of this ability by 1 mana.</
 			<property name="nativeTraits" value="{'Cantrip':True, 'Forcemaster Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1344,7 +1344,7 @@ If this Mage is Level 5 or greater, Shifratar rolls an additional attack die.</p
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Armor':1}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1366,7 +1366,7 @@ Once per round, when an opponent pays or loses mana because of an effect you con
 			<property name="bAttack" value="{'name':'Maim','source type':'Equipment','academyWeapon':True,'action type':'Quick','range type':'Melee','range':[0,0],'dice':4,'Vampiric':True}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1390,7 +1390,7 @@ If this Mage is level 5 or higher, Soulreaper rolls an additional attack die.</p
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Warlord Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1414,7 +1414,7 @@ A Warlord's true power lies in his ability to command his troops, not in the swi
 			<property name="addedTraits" value="{}"/>
 			<property name="zfTraits" value="{'symbOrb':True}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1438,7 +1438,7 @@ This counts as a Defense.</property>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'temperedFaulds':True, 'Armor':1}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1461,7 +1461,7 @@ Once per round, when this Mage is the target of an attack with an effect roll, y
 			<property name="nativeTraits" value="{'Dark Mage Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Armor':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1484,7 +1484,7 @@ This Mage gains <b>Armor +2</b>.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1506,7 +1506,7 @@ This Mage gains <b>Armor +2</b>.</property>
 			<property name="addedTraits" value="{}"/>
 			<property name="bMageTraits" value="{'ChannelBoost':1}"/>
 			<property name="spawnMarkers" value="Dissipate,6"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1528,7 +1528,7 @@ This Mage gains <b>Armor +2</b>.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Armor':1, 'Regenerate':[1]}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Mage"/>
@@ -1540,7 +1540,7 @@ This Mage gains <b>Armor +2</b>.</property>
 		</card>
 
 
-		<!--Conjuration Spells-->
+
 		<card id="f07775bd-58e0-4ea6-a9d1-1103f9f79187" name="Alluring Orchid">
 			<property name="Type" value="Conjuration"/>
 			<property name="Subtype" value="Plant, Flower, Vine"/>
@@ -1554,7 +1554,7 @@ This Mage gains <b>Armor +2</b>.</property>
 			<property name="Attack" value=""/>
 			<property name="nativeTraits" value="{'Living':True,'Flame':2}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1580,7 +1580,7 @@ When Alluring Orchid is melee attacked, during the Counterstrike Step, place a <
 			<property name="Attack" value=""/>
 			<property name="nativeTraits" value="{'Incorporeal':True,'Wind':2,'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1605,7 +1605,7 @@ Creatures may ignore guards when making melee attacks against conjurations in th
 			<property name="Stat_Life" value="5"/>
 			<property name="nativeTraits" value="{'Melting':2, 'Immunity':['Frost']}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Minor Weapon or Shield Equipment"/>
@@ -1631,7 +1631,7 @@ This equipment is <b>Disabled</b> (<i>it loses all attack bars, action bars, and
 			<property name="nativeTraits" value="{'Living':True, 'Regenerate':[2]}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1656,7 +1656,7 @@ This equipment is <b>Disabled</b> (<i>it loses all attack bars, action bars, and
 			<property name="nativeTraits" value="{'Immunity':['Flame'],'hydroEthereal':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="zTraits" value="{'Hellscape':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1681,7 +1681,7 @@ At the beginning of the Upkeep Phase, place a <b>Burn</b> condition on all creat
 			<property name="Stat_Life" value="6"/>
 			<property name="nativeTraits" value="{'Melting':2, 'Immunity':['Frost']}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -1706,7 +1706,7 @@ At the beginning of the Upkeep Phase, place a <b>Burn</b> condition on all creat
 			<property name="nativeTraits" value="{'Dissipate':True, 'Living':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1730,7 +1730,7 @@ At the beginning of the Upkeep Phase, place a <b>Burn</b> condition on all creat
 			<property name="Stat_Life" value="5"/>
 			<property name="nativeTraits" value="{'Immunity':['Flame']}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1753,7 +1753,7 @@ At the beginning of the Upkeep Phase, place a <b>Burn</b> condition on all creat
 			<property name="Stat_Life" value="8"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1778,7 +1778,7 @@ At the beginning of the Upkeep Phase, place a <b>Burn</b> condition on all creat
 			<property name="nativeTraits" value="{'Dissipate':True, 'Incorporeal':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1803,7 +1803,7 @@ Ranged | Lightning | 3d6 | d12 5+ = Stagger | Ethereal</property>
 			<property name="nativeTraits" value="{'Dissipate':2, 'Immunity':['Flame']}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -1819,7 +1819,7 @@ Zone Attack 0-0 | Ranged | Flame | 4d6 | d12 7+ = Burn | Unavoidable</property>
 		</card>
 
 
-		<!--Creature Spells-->
+
 		<card id="a5089f11-308d-4f6c-987b-753ac9cb6c55" name="Acid Ooze">
 			<property name="Type" value="Creature"/>
 			<property name="Subtype" value="Acid, Ooze"/>
@@ -1833,7 +1833,7 @@ Zone Attack 0-0 | Ranged | Flame | 4d6 | d12 7+ = Burn | Unavoidable</property>
 			<property name="Attack" value="{'name':'Engulfing Rust','action type':'Quick','range type':'Melee','range':[0,0],'damage type':'Acid','dice':2,'effects':{3: ['Corrode']}}"/>
 			<property name="nativeTraits" value="{'Living':False, 'Resilient':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -1861,7 +1861,7 @@ Direct damage and attack effects occur normally.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Weak,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -1888,7 +1888,7 @@ Whenever he attacks and damages a Living creature, he may move a Weak condition 
 			<property name="Attack" value="{'name':'Club Tail','action type':'Full','range type':'Melee','range':[0,0],'dice':3,'Sweeping':True}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -1915,7 +1915,7 @@ Full | Melee | 3d6 | Sweeping</property>
 			<property name="Attack" value="{'name':'Quill Attack','action type':'Quick','range type':'Melee','range':[0,0],'dice':1,'Piercing':1,'Counterstrike':True}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -1942,7 +1942,7 @@ Quick | Melee | 1d6 | Piercing +1, Counterstrike</property>
 			<property name="Attack" value="{'name':'Oathkeeper','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -1970,7 +1970,7 @@ Quick | Melee | 4d6</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Wish,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -1998,7 +1998,7 @@ The target gains <b>Melee +2</b> this round, or <b>Heals 2</b> damage, or gains 
 			<property name="Attack" value="{'name':'Scythe','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{'Living':False, 'Immunity':['Psychic']}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2024,7 +2024,7 @@ Quick | Melee | 4d6</property>
 			<property name="Attack" value="{'name':'Heart\'s Strike','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2051,7 +2051,7 @@ Quick | Melee | 2d6</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Burn,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2077,7 +2077,7 @@ Quick | Melee | Flame | 2d6</property>
 			<property name="Attack" value="{'name':'Biting Blooms','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{'Regenerate':[1]}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2105,7 +2105,7 @@ Quick | Melee | 4d6</property>
 			<property name="Attack" value="{'name':'Poisonous Bite','action type':'Quick','range type':'Melee','range':[0,0],'dice':1,'effects':{7: ['Weak']}}"/>
 			<property name="nativeTraits" value="{'Pest':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2136,7 +2136,7 @@ Caution is appropriate."
 			<property name="nativeTraits" value="{'Flying':True, 'Pest':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="zTraits" value="{'darkfenneOwl':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2163,7 +2163,7 @@ Quick | Melee | 1d6</property>
 			<property name="Attack" value="{'name':'Bite','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2191,7 +2191,7 @@ It calls out to its fellows, and then, when the moment is right, it gives the si
 			<property name="Attack" value="{'name':'Diamond Fists','action type':'Quick','range type':'Melee','range':[0,0],'dice':2,'Critical Damage':True}"/>
 			<property name="nativeTraits" value="{'Living':False, 'Immunity':['Flame', 'Psychic']}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2218,7 +2218,7 @@ Quick | Melee | 2d6 | Critical Damage</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2245,7 +2245,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Chain Whip','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2273,7 +2273,7 @@ During the Upkeep Phase another friendly <i>demon</i> creature in this zone <b>m
 			<property name="nativeTraits" value="{'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Damage,7"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2300,7 +2300,7 @@ The first time he has 0 damage, place 4 <b>Melee +1</b> tokens on him.</property
 			<property name="Attack" value="{'name':'Elven Blade','action type':'Quick','range type':'Melee','range':[0,0],'dice':2,'Piercing':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2327,7 +2327,7 @@ They often serve as military advisors and make up a large portion of the Ivarium
 			<property name="Attack" value="{'name':'Psionic Blast','action type':'Quick','range type':'Ranged','range':[ 0,0],'damage type':'Psychic','dice':2,'effects':{7: ['Stagger']},'Ethereal':True,'Unavoidable':True,'Critical Damage':True}"/>
 			<property name="nativeTraits" value="{'Pest':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2353,7 +2353,7 @@ Quick | Ranged 0-0 | Psychic | 2d6 | d12 7+ = Stagger | Ethereal, Unavoidable, C
 			<property name="Attack" value="{'name':'Flaming Fists','range type':'Melee','range':[0,0],'damage type':'Flame','dice':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2383,7 +2383,7 @@ Other just want to hit things."
 			<property name="nativeTraits" value="{'Forcemaster Only':True, 'Aegis':[1], 'Living':False, 'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,4"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2412,7 +2412,7 @@ Forcemaster Only</property>
 			<property name="nativeTraits" value="{'Forcemaster Only':True, 'Aegis':[2], 'Living':False, 'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,5"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2440,7 +2440,7 @@ Forcemaster Only</property>
 			<property name="nativeTraits" value="{'Forcemaster Only':True, 'Invisible':True, 'Living':False, 'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,4"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2468,7 +2468,7 @@ Forcemaster Only</property>
 			<property name="nativeTraits" value="{'Aegis':[2],'Living':False,'Forcemaster Only':True, 'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,5"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2496,7 +2496,7 @@ When Force Phoenix is destroyed, you may pay 7 mana to <b>Reanimate</b> it.</pro
 			<property name="Attack" value="{'name':'Frozen Fists','damage type':'Frost','range type':'Melee','range':[0,0],'dice':5,'effects':{7: ['Freeze', 'Freeze']}}"/>
 			<property name="nativeTraits" value="{'Melting':2,'Living':False,'Immunity':['Frost'],'Flame':2}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2525,7 +2525,7 @@ Flame +2</property>
 			<property name="Attack" value="{'name':'Jolt','action type':'Quick','range type':'Melee','range':[0,0],'damage type':'Lightning','dice':2,'effects':{7: ['Stagger']},'Ethereal':True}"/>
 			<property name="nativeTraits" value="{'Upkeep':1, 'Legendary':True,'Immunity':['Lightning','Psychic'], 'Incorporeal':True, 'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2552,7 +2552,7 @@ Incorporeal • Nonliving</property>
 			<property name="Attack" value="{'name':'Holy Water Sprinkler','action type':'Full','range type':'Melee','range':[0,0],'dice':1,'Sweeping':True}"/>
 			<property name="nativeTraits" value="{'Aegis':[1], 'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2579,7 +2579,7 @@ Full Action | Melee | 1d6 | Sweeping</property>
 			<property name="Attack" value="{'name':'Shortsword','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2607,7 +2607,7 @@ A maximum of two additional friendly Goblin Legionnaires can be summoned this wa
 			<property name="Attack" value="{'name':'Poison Spear','range type':'Ranged','range':[0,1],'dice':2,'effects':{7: ['Weak']}}"/>
 			<property name="nativeTraits" value="{'Regenerate':[1]}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2633,7 +2633,7 @@ Quick | Ranged 0-1 | 3d6 | d12 8+ = Weak</property>
 			<property name="Attack" value="{'name':'Smash','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2659,7 +2659,7 @@ Quick | Melee | 4d6</property>
 			<property name="Attack" value="{'name':'Longsword','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2685,7 +2685,7 @@ Quick | Melee | 4d6</property>
 			<property name="Attack" value="{'name':'Backstab','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2712,7 +2712,7 @@ While attacking an inactive creature, Backstab gains the <b>Piercing +2</b> trai
 			<property name="Attack" value="{'name':'1000 Bites','action type':'Quick','range type':'Melee','range':[0,0],'dice':1,'Unavoidable':True}"/>
 			<property name="nativeTraits" value="{'Elusive':True, 'Swarm':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2739,7 +2739,7 @@ Quick | Melee | 1d6 | Unavoidable</property>
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Guard,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2765,7 +2765,7 @@ Quick | Melee | 1d6</property>
 			<property name="Attack" value="{'name':'Dive','action type':'Quick','range type':'Melee','range':[0,0],'dice':3,'Piercing':1}"/>
 			<property name="nativeTraits" value="{'Flying':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2791,7 +2791,7 @@ Quick | Melee | 3d6 | Piercing +1</property>
 			<property name="Attack" value="{'name':'Frosty Fists','damage type':'Frost','range type':'Melee','range':[0,0],'dice':3,'effects':{3: ['Freeze']}}"/>
 			<property name="nativeTraits" value="{'Melting':1,'Living':False,'Immunity':['Frost','Psychic'],'Flame':2}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2819,7 +2819,7 @@ Psychic Immunity • Flame +2</property>
 			<property name="Attack" value="{'name':'Feral Spear','action type':'Quick','range type':'Melee','range':[0,0],'dice':4,'Piercing':2}"/>
 			<property name="nativeTraits" value="{'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2846,7 +2846,7 @@ If your Mage is trained in <i>War</i> magic, Izimbila gains the <i>soldier</i> s
 			<property name="Attack" value="{'name':'Fists','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{'Pest':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2875,7 +2875,7 @@ They teleport so fast its impossible to catch these pests!"
 			<property name="Attack" value="{'name':'Branch Smash','action type':'Full','range type':'Melee','range':[0,0],'dice':5,'Reach':True,'Target':{'target':{'Traits':['Flying']},'bonus':2}}"/>
 			<property name="nativeTraits" value="{'Regenerate':[2]}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2901,7 +2901,7 @@ Quick | Melee | 5d6 | Reach</property>
 			<property name="Attack" value="{'name':'Shortbow','action type':'Quick','range type':'Ranged','range':[ 0,1],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2928,7 +2928,7 @@ Quick | Ranged 0-1 | 2d6</property>
 			<property name="Attack" value="{'name':'Cascade of Blades','range type':'Melee','range':[0,0],'dice':4,'Counterstrike':True}"/>
 			<property name="nativeTraits" value="{'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2956,7 +2956,7 @@ Quick | Melee | 4d6 | Counterstrike</property>
 			<property name="Attack" value="{'name':'Bloodthirsty Bite','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -2982,7 +2982,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'1000 Stings','range type':'Melee','range':[0,0],'dice':1,'Critical Damage':True}"/>
 			<property name="nativeTraits" value="{'Elusive':True,'Flying':True,'Swarm':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3010,7 +3010,7 @@ Quick | Melee | Poison | 1d6 | Critical Damage</property>
 			<property name="Attack" value="{'name':'Voracious Fangs','range type':'Melee','range':[0,0],'dice':2,'Piercing':1}"/>
 			<property name="nativeTraits" value="{'Legendary':True,'Regenerate':[1],'Bloodthirsty':2}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3036,7 +3036,7 @@ Quick | Melee | 2d6 | Piercing +2</property>
 			<property name="Attack" value="{'name':'Lashing Vines','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{'Regenerate':[2]}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3063,7 +3063,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Electric Bite','action type':'Quick','range type':'Melee','range':[0,0],'damage type':'Lightning','dice':0,'effects':{7: ['Stagger']},'Ethereal':True}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3091,7 +3091,7 @@ If Lightning Raptor has 5 charge tokens, its attack gains the <b>Counterstrike</
 			<property name="Attack" value="{'name':'Horn','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3118,7 +3118,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Searing Tailwhip','action type':'Quick','range type':'Melee','range':[0,0],'dice':1,'effects':{7: ['Burn']}}"/>
 			<property name="nativeTraits" value="{'Immunity':['Psychic'], 'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3144,7 +3144,7 @@ Quick | Melee | 1d6 | d12 7+ = Burn</property>
 			<property name="Attack" value="{'name':'Stinging Tentacles','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3171,7 +3171,7 @@ Just be glad it's still a grub.</i></property>
 			<property name="Attack" value="{'name':'Plaguetouch','action type':'Quick','range type':'Melee','range':[0,0],'dice':3,'Ethereal':True,'Critical Damage':True}"/>
 			<property name="nativeTraits" value="{'Incorporeal':True, 'Living':False, 'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3198,7 +3198,7 @@ Creatures with Psychic Immunity ignore this effect.</property>
 			<property name="Attack" value="{'name':'Undead Might','action type':'Quick','range type':'Melee','range':[0,0],'dice':5}"/>
 			<property name="nativeTraits" value="{'Living':False, 'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3225,7 +3225,7 @@ This does not cause Matesis to lose his guard marker.</property>
 			<property name="Attack" value="{'name':'Eagle Strike','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3254,7 +3254,7 @@ You gain 1 mana.</property>
 			<property name="nativeTraits" value="{'Legendary':True, 'Elusive':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="SealToken,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3283,7 +3283,7 @@ While Mhegedden has Seal tokens, he gains the <b>Pest</b> trait, and may not tak
 			<property name="Attack" value="{'name':'Squish','action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{'Living':False, 'Immunity':['Psychic']}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3311,7 +3311,7 @@ For each Charge counter, increase its Life by 2 and it gains <b>Melee +1</b>.</p
 			<property name="Attack" value="{'name':'Twin Blades','action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3337,7 +3337,7 @@ Quick | Melee | 3d6</property>
 			<property name="Attack" value="{'name':'Unholy Bite','range type':'Melee','range':[0,0],'dice':3,'Vampiric':True}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3367,7 +3367,7 @@ No need to sell your soul or sacrifice someone."
 			<property name="Attack" value="{'name':'Closed Fist','action type':'Quick','range type':'Melee','range':[0,0],'dice':4,'Unavoidable':True}"/>
 			<property name="nativeTraits" value="{'Legendary':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3397,7 +3397,7 @@ you gain 2 Ki.</property>
 			<property name="Attack" value="{'name':'Paralyzing Ray','action type':'Full','range type':'Ranged','range':[0,1],'dice':2,'effects':{7: ['Stagger']}}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3423,7 +3423,7 @@ Full Action | Ranged 0-1 | 2d6 | d12 7+ = Stagger</property>
 			<property name="Attack" value="{'name':'Claws','action type':'Quick','range type':'Melee','range':[0,0],'dice':2,'Piercing':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3450,7 +3450,7 @@ It is a popular symbol, adorning the shields and banners of noble houses.</i></p
 			<property name="Attack" value="{'name':'Plague Strike','action type':'Quick','range type':'Melee','range':[0,0],'dice':4,'effects':{9: ['Rot']}}"/>
 			<property name="nativeTraits" value="{'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3476,7 +3476,7 @@ Quick | Melee | 3d6 | d12 9+ = Rot</property>
 			<property name="Attack" value="{'name':'Claws','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3504,7 +3504,7 @@ If he does, remove 1 damage from a friendly <i>mummy</i> in this zone.</property
 			<property name="nativeTraits" value="{'Pest':True,'Living':False,'Forcemaster Only':True, 'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,5"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3533,7 +3533,7 @@ Forcemaster Only</property>
 			<property name="nativeTraits" value="{'Aegis':[2],'Living':False,'Forcemaster Only':True, 'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,5"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3560,7 +3560,7 @@ Forcemaster Only</property>
 			<property name="Attack" value="{'name':'Gore','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{'Tough':-2}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3588,7 +3588,7 @@ Remove the <b>Charge</b> token after making an attack.</property>
 			<property name="Attack" value="{'name':'Claws','action type':'Quick','range type':'Melee','range':[0,0],'dice':4,'Piercing':1}"/>
 			<property name="nativeTraits" value="{'Legendary':True, 'Elusive':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3615,7 +3615,7 @@ Quick | Melee | 4d6 | Piercing +1</property>
 			<property name="Attack" value="{'name':'Razor Tusks','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3642,7 +3642,7 @@ Often it's the very thing that seeks to eat them first.</i></property>
 			<property name="Attack" value="{'name':'Poisonous Bite','action type':'Quick','range type':'Melee','range':[0,0],'dice':2,'effects':{7: ['Weak']}}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3668,7 +3668,7 @@ Quick | Melee | 2d6 | d12 7+ = Weak</property>
 			<property name="Attack" value="{'name':'Claws','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3695,7 +3695,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Stone Fist','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{'Living':False, 'Immunity':['Psychic']}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3721,7 +3721,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Forge Hammer','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3747,7 +3747,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Bite','action type':'Full','range type':'Melee','range':[0,0],'dice':3,'Doublestrike':True}"/>
 			<property name="nativeTraits" value="{'Regenerate':[1]}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3773,7 +3773,7 @@ Full Action | Melee | 3d6 | Doublestrike</property>
 			<property name="Attack" value="{'name':'Demon Claws','range type':'Melee','range':[0,0],'dice':2,'Piercing':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3799,7 +3799,7 @@ Quick | Melee | 2d6 | Piercing +1</property>
 			<property name="Attack" value="{'name':'Heavy Mace','action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3826,7 +3826,7 @@ Quick | Melee | 3d6</property>
 			<property name="Attack" value="{'name':'Corroded Blade','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3852,7 +3852,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Claws','action type':'Quick','range type':'Melee','range':[0,0],'dice':3,'Piercing':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3879,7 +3879,7 @@ Silverclaw Ratel cannot guard.</property>
 			<property name="Attack" value="{'name':'Saber Fangs','action type':'Quick','range type':'Melee','range':[0,0],'dice':4,'Piercing':2}"/>
 			<property name="nativeTraits" value="{'Legendary':True, 'Epic':True, 'Beastmaster Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3906,7 +3906,7 @@ At the end of each of his activations, you may pay 2 mana to place a <b>Guard</b
 			<property name="Attack" value="{'name':'Swiftstrike','action type':'Quick','range type':'Melee','range':[0,0],'dice':2,'Unavoidable':True}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3932,7 +3932,7 @@ Quick | Melee | 2d6 | Unavoidable</property>
 			<property name="Attack" value="{'name':'Claws','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{'Pest':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3958,7 +3958,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Claws','action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -3986,7 +3986,7 @@ I told you to say away from her cubs!"</i></property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1;scoutToken,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4013,7 +4013,7 @@ Friendly creatures gain +1 attack die for the next attack they make against the 
 			<property name="Attack" value="{'name':'Swamp Slam','action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{'Regenerate':[2]}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4039,7 +4039,7 @@ Quick | Melee | 3d6</property>
 			<property name="Attack" value="{'name':'Venomous Bite','action type':'Quick','range type':'Melee','range':[0,0],'dice':2,'effects':{8: ['Rot']}}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4065,7 +4065,7 @@ Quick | Melee | 2d6 | d12 8+ = Rot</property>
 			<property name="Attack" value="{'name':'Snap','action type':'Quick','range type':'Melee','range':[0,0],'dice':3}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4092,7 +4092,7 @@ Quick | Melee | 3d6</property>
 			<property name="Attack" value="{'name':'Ravenous Bite','action type':'Quick','range type':'Melee','range':[0,0],'dice':2,'Unavoidable':True}"/>
 			<property name="nativeTraits" value="{'Pest':True, 'Elusive':True, 'Legendary':True, 'Beastmaster Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4122,7 +4122,7 @@ Beastmaster Only</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Guard,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4149,7 +4149,7 @@ When Temple Sentry is summoned, place a guard marker on him.</property>
 			<property name="Attack" value="{'name':'Aimed Strike','action type':'Full','range type':'Ranged','range':[0,1],'dice':3,'Piercing':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4172,7 +4172,7 @@ Quick | Ranged 0-1 | 3d6 | Piercing +1</property>
 			<property name="Level" value="3"/>
 			<property name="nativeTraits" value="{'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4198,7 +4198,7 @@ X = the removed creature's mana cost.</property>
 			<property name="Attack" value="{'name':'Tidal Crash','range type':'Melee','range':[0,0],'damage type':'Hydro','dice':4,'effects':{7: ['Stagger']}}"/>
 			<property name="nativeTraits" value="{'Immunity':['Hydro'],'Living':False,'Resilient':True,'Burnproof':True,'Frost':2}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4226,7 +4226,7 @@ Burnproof • Frost +2</property>
 			<property name="Attack" value="{'name':'Necrotic Grasp','action type':'Quick','range type':'Melee','range':[0,0],'dice':5}"/>
 			<property name="nativeTraits" value="{'Legendary':True, 'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4254,7 +4254,7 @@ While Tjusut has a Guard marker, he cannot <b>reset</b>.</property>
 			<property name="nativeTraits" value="{'Aegis':[2],'Living':False,'Forcemaster Only':True, 'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,5;Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4282,7 +4282,7 @@ If you do, place a Guard marker on Tomb Guardian.</property>
 			<property name="Attack" value="{'name':'Heavy Club','action type':'Quick','range type':'Melee','range':[0,0],'dice':5}"/>
 			<property name="nativeTraits" value="{'Legendary':True, 'Regenerate':[2], 'Tough':-2}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4309,7 +4309,7 @@ Few Dromachi have a reputation for being as tough, or as unforgiving.</i></prope
 			<property name="Attack" value="{'name':'Deathtouch','action type':'Quick','range type':'Melee','range':[0,0],'dice':1,'Ethereal':True,'Critical Damage':True}"/>
 			<property name="nativeTraits" value="{'Incorporeal':True, 'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4335,7 +4335,7 @@ Quick | Melee | 1d6 | Ethereal, Critical Damage</property>
 			<property name="Attack" value="{'name':'Claws','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{'Living':False}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4361,7 +4361,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Tongue Lash','action type':'Quick','range type':'Melee','range':[0,0],'dice':3,'Reach':True}"/>
 			<property name="nativeTraits" value="{'Elusive':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4387,7 +4387,7 @@ Quick | Melee | 3d6 | Reach</property>
 			<property name="Attack" value="{'name':'Gleaming Sword','action type':'Quick','range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4416,7 +4416,7 @@ Quick | Melee | 4d6</property>
 			<property name="nativeTraits" value="{'Pest':True, 'Beastmaster Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4444,7 +4444,7 @@ Quick | Melee | 1d6 | Ethereal</property>
 			<property name="Attack" value="{'name':'Bite','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4470,7 +4470,7 @@ Quick | Melee | 2d6</property>
 			<property name="Attack" value="{'name':'Shortbow','action type':'Quick','range type':'Ranged','range':[ 0,1],'dice':3}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4496,7 +4496,7 @@ Quick | Ranged 0-1 | 3d6</property>
 			<property name="Attack" value="{'name':'Bite','action type':'Quick','range type':'Melee','range':[0,0],'dice':2}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4524,7 +4524,7 @@ In a swarm, they can bring down a hydra."</i></property>
 			<property name="Attack" value="{'name':'Pounce','action type':'Quick','range type':'Melee','range':[0,0],'dice':4,'Piercing':1}"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -4539,7 +4539,7 @@ Quick | Melee | 4d6 | Piercing +1</property>
 		</card>
 
 
-		<!--Enchantment Spells-->
+
 		<card id="507522d6-d9b4-4597-a1e6-0a03cc1e07ec" name="Akiro's Game">
 			<property name="Type" value="Enchantment"/>
 			<property name="Subtype" value="Fortune"/>
@@ -4551,7 +4551,7 @@ Quick | Melee | 4d6 | Piercing +1</property>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Epic':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="3"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4574,7 +4574,7 @@ If there is a tie, roll the effect die to determine which creature is Staggered.
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4599,7 +4599,7 @@ Then, destroy Arcane Ward.</property>
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4622,7 +4622,7 @@ Corporeal creatures in this zone roll 1 less attack die when making non-spell at
 			<property name="nativeTraits" value="{'Epic':True,'Holy Mage Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Disspiate,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="4"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4645,7 +4645,7 @@ You may only reveal Asyra's Grace during the Upkeep Phase.</property>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="bTraits" value="{'Aegis':[1]}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4669,7 +4669,7 @@ If this creature is Level 1, you may reduce the reveal cost of Asyra's Touch by 
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'badgerFrenzy':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4692,7 +4692,7 @@ If this creature is Level 1, reduce the reveal cost of Badger Frenzy by 1.</prop
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4713,7 +4713,7 @@ If this creature is Level 1, reduce the reveal cost of Badger Frenzy by 1.</prop
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4735,7 +4735,7 @@ If this creature is Level 1, reduce the reveal cost of Badger Frenzy by 1.</prop
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="zfTraits" value="{'Armor':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="4"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4758,7 +4758,7 @@ During the Upkeep Phase, you may heal 1 damage from a Living Holy creature in th
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4779,7 +4779,7 @@ This creature cannot make a melee attack against a creature of a greater level.<
 			<property name="School" value="Dark"/>
 			<property name="Level" value="2"/>
 			<property name="bTraits" value="{'curseItem':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="4"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4801,7 +4801,7 @@ True masters can subvert the very steel in their enemy's hand.</i></property>
 			<property name="School" value="Dark"/>
 			<property name="Level" value="1"/>
 			<property name="bTraits" value="{'poisonDOT':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4824,7 +4824,7 @@ You wake to find you've got a nasty case of rotting flesh."
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="5"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4845,7 +4845,7 @@ You wake to find you've got a nasty case of rotting flesh."
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4869,7 +4869,7 @@ Remember it well."
 			<property name="Level" value="1/1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="bTraits" value="{'deepFreeze':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4892,7 +4892,7 @@ Additionally, Freeze conditions are not removed at the end of this creature's ac
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4916,7 +4916,7 @@ If this is a minor creature, reduce the reveal cost of Defend Me by 1.</property
 			<property name="nativeTraits" value="{'Warlock Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Melee':1,'demonicLink':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4940,7 +4940,7 @@ Paths that do not require pious supplication."
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4965,7 +4965,7 @@ They have themselves, a force more powerful than any army."
 			<property name="nativeTraits" value="{'Cantrip':True, 'Warlord Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="zfTraits" value="{'digIn':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -4990,7 +4990,7 @@ If this ability is used by a minor creature, reduce the cost of this ability by 
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'divineReversal':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5015,7 +5015,7 @@ Then, destroy Divine Reversal.</property>
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Defense':[{'Threshold':7, 'Uses':1,'name':'Dodge'}]}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5040,7 +5040,7 @@ Then destroy Dodge.</property>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5066,7 +5066,7 @@ If this equipment is level 2, increase the reveal cost of Drop Item by 2.</prope
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="3"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5090,7 +5090,7 @@ If this creature is Level 1, reduce the reveal cost of Exile by 1.</property>
 			<property name="nativeTraits" value="{'Cantrip':True, 'Warlord Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="zfTraits" value="{'fireAtWill':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5116,7 +5116,7 @@ If this ability is used by a minor creature, reduce the cost of this ability by 
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'forceShield':True}"/>
 			<property name="spawnMarkers" value="Dissipate,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5139,7 +5139,7 @@ What chance do you have when even thoughts can block your blade?"
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{'Cantrip':True, 'Warlord Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5164,7 +5164,7 @@ If they do, that attack rolls 2 less attack dice (to a minimum of 1).</property>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'FortRes':True}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5186,7 +5186,7 @@ If they do, that attack rolls 2 less attack dice (to a minimum of 1).</property>
 			<property name="Level" value="1+1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="4"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5210,7 +5210,7 @@ Then, destroy Frost Trap.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Melee':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5231,7 +5231,7 @@ Remove one condition marker from this creature by paying its removal cost, and t
 			<property name="School" value="Nature"/>
 			<property name="Level" value="1"/>
 			<property name="bTraits" value="{'Armor':1,'Life':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5257,7 +5257,7 @@ Remove one condition marker from this creature by paying its removal cost, and t
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Melee':2,'Life':5}"/>
 			<property name="spawnMarkers" value="Dissipate,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="3"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5279,7 +5279,7 @@ Remove one condition marker from this creature by paying its removal cost, and t
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'glancingBlow':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5304,7 +5304,7 @@ When you give hope, victory slips away."
 		    <property name="Level" value="1"/>
 		    <property name="nativeTraits" value="{'Wizard Only':True, 'Epic':True}"/>
 		    <property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5328,7 +5328,7 @@ If Hoodwink is destroyed, even if hidden, you may place it back into your spellb
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Regenerate':[1],'Life':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="X"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5351,7 +5351,7 @@ X = this creature's Level.</property>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Beastmaster Only':True}"/>
 			<property name="bTraits" value="{'joinedStr':True,'Melee':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5375,7 +5375,7 @@ If this creature is destroyed you may pay 1 mana to move Joined Strenth to a new
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5401,7 +5401,7 @@ If this creature is Level 1, reduce the reveal cost of Lesser Invisibility by 1.
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'MartialMastery':True,'Discount':[{'target':{'Subtype':['Martial']}, 'Qty':1,'Caster':'Mage','Reveal':True}]}"/>
 			<property name="spawnMarkers" value="Ready,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="4"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5426,7 +5426,7 @@ Enchantments only receive this discount when they are revealed.</property>
 			<property name="nativeTraits" value="{'Dissipate':True, 'Epic':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5449,7 +5449,7 @@ Living creatures in this zone cannot make melee attacks against creatures of a h
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{'Mind Mage Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="X"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5474,7 +5474,7 @@ X = taret's Level + 2.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Upkeep':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5496,7 +5496,7 @@ X = taret's Level + 2.</property>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5520,7 +5520,7 @@ Then, destroy Miss.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Melee':1,'Life':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5543,7 +5543,7 @@ If this creature is a <i>plant</i>, reduce the reveal cost of Overgrowth by 1.</
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5567,7 +5567,7 @@ While attacking a creature of greater Level, it gains <b>Melee +2</b>.</property
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Elusive':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5590,7 +5590,7 @@ If this creature is Level 1, reduce the reveal cost of Panther Stealth by 1.</pr
 			<property name="nativeTraits" value="{'Cantrip':True,'Warlord Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="zfTraits" value="{'PressAttack':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5615,7 +5615,7 @@ If this ability is used by a minor creature, reduce the cost of this ability by 
 			<property name="nativeTraits" value="{'Warlord Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Melee':1,'Armor':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5639,7 +5639,7 @@ If this creaure is Level 1, reduce the reveal cost of Promotion by 1.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Reclamation':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="3"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5659,7 +5659,7 @@ If this creaure is Level 1, reduce the reveal cost of Promotion by 1.</property>
 			<property name="School" value="Mind"/>
 			<property name="Level" value="1"/>
 			<property name="bTraits" value=""/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5685,7 +5685,7 @@ Then, destroy Redirect.</property>
 			<property name="nativeTraits" value="{'Forcemaster Only':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Melee':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5708,7 +5708,7 @@ If this spell would be destroyed by an opponent's effect, prevent that destructi
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Novice':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5732,7 +5732,7 @@ once bitten, bite back."
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Forcemaster Only':True}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="3"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5756,7 +5756,7 @@ Cancel the attack and place a Stagger condition on the attacker, then destroy Re
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Life':10}"/>
 			<property name="spawnMarkers" value="Dissipate,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="3"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5779,7 +5779,7 @@ Cancel the attack and place a Stagger condition on the attacker, then destroy Re
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5802,7 +5802,7 @@ If this is a minor creature, reduce the reveal cost of Sanctuary by 1.</property
 			<property name="School" value="Dark"/>
 			<property name="Level" value="1"/>
 			<property name="bTraits" value="{'Vampiric':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5826,7 +5826,7 @@ I've come to terms with most of it, save for the trast of angel blood."
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="X"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5847,7 +5847,7 @@ X = the creature's casting cost.</property>
 			<property name="Cast_Target" value="{'Type':['Creature']}"/>
 			<property name="School" value="Air"/>
 			<property name="Level" value="1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="0"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5871,7 +5871,7 @@ Then, destroy Shock.</property>
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="X"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5896,7 +5896,7 @@ X = the creature's Level.</property>
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="X"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5921,7 +5921,7 @@ X = this creature's Level.</property>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5944,7 +5944,7 @@ X = this creature's Level.</property>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'tangleRoot':True}"/>
 			<property name="spawnMarkers" value="Dissipate,3"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5967,7 +5967,7 @@ X = this creature's Level.</property>
 			<property name="spawnMarkers" value="Dissipate,2"/>
 			<property name="nativeTraits" value="{'Dissipate':True,'Mandatory':'Activate'}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="4"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -5993,7 +5993,7 @@ This creature is <b>Restrained</b> and gains the <b>Flame +1</b> trait.
 			<property name="nativeTraits" value="{'Dissipate':True}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="spawnMarkers" value="Dissipate,2"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -6016,7 +6016,7 @@ It will burn with the power of your inner might."
 			<property name="Level" value="1/1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="X"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -6040,7 +6040,7 @@ Embrace it and despair."
 			<property name="School" value="Dark"/>
 			<property name="Level" value="1"/>
 			<property name="bTraits" value="{'theftOfLife':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="1"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -6063,7 +6063,7 @@ Then <b>heal</b> your Mage 1 damage.</property>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -6087,7 +6087,7 @@ Then, destroy Unholy Reversal.</property>
 			<property name="nativeTraits" value="{}"/>
 			<property name="addedTraits" value="{}"/>
 			<property name="bTraits" value="{'Melee':1,'Piercing':1}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Reveal Cost" value="2"/>
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
@@ -6102,7 +6102,7 @@ You embody both."
 		</card>
 
 
-		<!--Incantation Spells-->
+
 		<card id="9dc879c5-1763-43a7-ab85-53ece8a6ffca" name="Abyssal Sacrifice">
 			<property name="Type" value="Incantation"/>
 			<property name="Subtype" value=""/>
@@ -6112,7 +6112,7 @@ You embody both."
 			<property name="School" value="Dark"/>
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{'Dark Mage Only':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Friendly Creature"/>
@@ -6132,7 +6132,7 @@ If you do, target a different friendly <i>Dark</i> creature in that zone, place 
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Bound Healing','Spell':True,'range type':'Heal','source type':'Incantation','range':[0,0],'dice':2,'Heal':True}"/>
 			<property name="Attack" value="{'name':'Bound Healing','Spell':True,'range type':'Heal','source type':'Incantation','range':[0,0],'dice':2,'Heal':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Non-Mage Living Creature"/>
@@ -6151,7 +6151,7 @@ Heal the caster of this spell the amount rolled on 2 attack dice.</property>
 			<property name="School" value="Water"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Equipment"/>
@@ -6174,7 +6174,7 @@ Through a careful harnessing of its essence, all things can be made or unmade."
 			<property name="School" value="Holy"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Living Creature"/>
@@ -6192,7 +6192,7 @@ If you do, heal that creature the amount rolled on 2 attack dice.</property>
 			<property name="Cast_Target" value="{'Type':['Enchantment']}"/>
 			<property name="School" value="Arcane"/>
 			<property name="Level" value="1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Revealed Enchantment"/>
@@ -6214,7 +6214,7 @@ X = the <b>reveal</b> cost of target enchantment.</property>
 			<property name="School" value="Mind"/>
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Zone"/>
@@ -6231,7 +6231,7 @@ X = the <b>reveal</b> cost of target enchantment.</property>
 			<property name="Cast_Target" value="{'Type':['Creature']}"/>
 			<property name="School" value="Water"/>
 			<property name="Level" value="1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Creature"/>
@@ -6251,7 +6251,7 @@ Then, you may remove any number of additional Burn conditions by paying the remo
 			<property name="School" value="Arcane"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Novice':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Revealed Enemy Enchantment"/>
@@ -6272,7 +6272,7 @@ X = the reveal cost of the enchantment.</property>
 			<property name="School" value="War"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Corporeal Creature"/>
@@ -6292,7 +6292,7 @@ If the target is a minor creature, reduce the mana cost of Focused Strike by 1.<
 			<property name="School" value="War"/>
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{'Magecast':True, 'Epic':True, 'Warlord Only':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Mage"/>
@@ -6312,7 +6312,7 @@ As free actions, cast up to three Equipment spells from you spellbook, targeting
 			<property name="School" value="Holy"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -6331,7 +6331,7 @@ Roll separately for each creature.</property>
 			<property name="School" value="Mind"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Magecast':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Self"/>
@@ -6351,7 +6351,7 @@ Roll separately for each creature.</property>
 			<property name="bAttack" value="{'name':'Mend','Spell':True,'range type':'Heal','source type':'Incantation','range':[0,0],'dice':3,'Heal':True}"/>
 			<property name="Attack" value="{'name':'Mend','Spell':True,'range type':'Heal','source type':'Incantation','range':[0,0],'dice':3,'Heal':True}"/>
 			<property name="nativeTraits" value="{'Novice':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Living Creature"/>
@@ -6370,7 +6370,7 @@ Roll separately for each creature.</property>
 			<property name="School" value="Water"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Object"/>
@@ -6388,7 +6388,7 @@ Roll separately for each creature.</property>
 			<property name="School" value="Water"/>
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Mage"/>
@@ -6405,7 +6405,7 @@ Roll separately for each creature.</property>
 			<property name="Cast_Target" value="{'Owner':'me'}"/>
 			<property name="School" value="Holy"/>
 			<property name="Level" value="1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Friendly Object"/>
@@ -6425,7 +6425,7 @@ Then if you destroyed at least 1 <i>curse</i> enchantment, you gain 2 mana.</pro
 			<property name="School" value="Holy"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Novice':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Hidden Enchantment"/>
@@ -6445,7 +6445,7 @@ If it is a mandatory enchantment, then it is not destroyed if it would be forced
 			<property name="School" value="Arcane"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Magecast':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Friendly Mage"/>
@@ -6465,7 +6465,7 @@ You can only cast this spell once per round.</property>
 			<property name="School" value="Arcane"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{'Novice':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Non-Epic Object"/>
@@ -6486,7 +6486,7 @@ Siphon Energy cannot remove the last Dissipate token from an object.</property>
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Siphon Life','range type':'Incantation','Cost':6,'range':[0,1],'dice':3,'Critical Damage':True,'Drain':True,'source type':'Incantation','Spell':True}"/>
 			<property name="nativeTraits" value="{'Magecast':True, 'Dark Mage Only':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Living Creature"/>
@@ -6509,7 +6509,7 @@ Paths to undeath, for example."
 			<property name="School" value="War"/>
 			<property name="Level" value="1"/>
 			<property name="bTraits" value="{'Piercing':2}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Minor Corporeal Creature"/>
@@ -6528,7 +6528,7 @@ Paths to undeath, for example."
 			<property name="School" value="Dark"/>
 			<property name="Level" value="2"/>
 			<property name="nativeTraits" value="{'Necromancer Only':True, 'Epic':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Non-Legendary Minor Living Creature"/>
@@ -6547,7 +6547,7 @@ X = target creature's mana cost plus the combined total mana costs of enchantmen
 			<property name="School" value="War"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Corporeal Creature"/>
@@ -6565,7 +6565,7 @@ Reduce Sweeping Strike's mana cost by 1 when targeting a minor creature.</proper
 			<property name="Cast_Target" value="{'Subtype':['Mage']}"/>
 			<property name="School" value="Dark"/>
 			<property name="Level" value="1"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Arena"/>
@@ -6585,7 +6585,7 @@ Pain becomes power.</i></property>
 			<property name="School" value="Earth"/>
 			<property name="Level" value="1"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Corporeal Conjuration"/>
@@ -6598,7 +6598,7 @@ X = the Conjuration's mana cost + the combined mana costs of any objects attache
 		</card>
 
 
-		<!--Attack Spells-->
+
 		<card id="dc4f4495-5fdb-4eb2-9b11-ade8f59ac74a" name="Acid Blast">
 			<property name="Type" value="Attack"/>
 			<property name="Subtype" value="Acid"/>
@@ -6609,7 +6609,7 @@ X = the Conjuration's mana cost + the combined mana costs of any objects attache
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Acid Blast','Spell':True,'source type':'Attack','Cost':5,'range type':'Ranged','range':[0,1],'damage type':'Acid','dice':2,'effects':{9: ['Corrode']},'Sweeping':True,'Unavoidable':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6629,7 +6629,7 @@ X = the Conjuration's mana cost + the combined mana costs of any objects attache
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Arcane Missiles','Spell':True,'source type':'Attack','Cost':6,'range type':'Ranged','range':[0,1],'dice':2,'Ethereal':True,'Unavoidable':True,'Critical Damage':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="1-3 Creatures or Conjurations"/>
@@ -6651,7 +6651,7 @@ Roll for each attack separately.</property>
 			<property name="Level" value="1/1"/>
 			<property name="bAttack" value="{'name':'Beam of Frost','Spell':True,'source type':'Attack','Cost':5,'range type':'Ranged','range':[0,1],'damage type':'Frost','dice':2,'effects':{4: ['Freeze', 'Freeze']}}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6671,7 +6671,7 @@ Roll for each attack separately.</property>
 			<property name="Level" value="1/1"/>
 			<property name="bAttack" value="{'name':'Cone of Frost','Spell':True,'source type':'Attack','Cost':5,'range type':'Ranged','range':[0,1],'damage type':'Frost','dice':2,'effects':{8: ['Freeze', 'Freeze']},'Sweeping':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6691,7 +6691,7 @@ Roll for each attack separately.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Dazzle','Spell':True,'source type':'Attack','Cost':2,'range type':'Ranged','range':[0,1],'damage type':'Light','dice':1,'effects':{4: ['Stagger']},'Ethereal':True,'Target':{'target':{'Traits':['!Living'],'Type': ['Creature']},'bonus':2}}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6711,7 +6711,7 @@ Roll for each attack separately.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Dragon-Tail Sweep','Spell':True,'source type':'Attack','Cost':3,'range type':'Melee','range':[0,0],'dice':3,'Sweeping':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6731,7 +6731,7 @@ If you do, this attacks rolls 1 additional attack die.</property>
 			<property name="School" value="Fire"/>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Firestream','Spell':True,'source type':'Attack','Cost':4,'range type':'Ranged','range':[0,1],'damage type':'Flame','dice':4,'effects':{6: ['Burn']}}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6756,7 +6756,7 @@ Find yourself in fire."
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Fist of Iron','Spell':True,'source type':'Attack','Cost':3,'range type':'Melee','range':[0,0],'dice':4}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6778,7 +6778,7 @@ Fist of Iron cannot gain the effect of the <b>Melee +X</b> trait.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Fist of Lightning','Spell':True,'source type':'Attack','Cost':2,'range type':'Melee','range':[0,0],'damage type':'Lightning','dice':3,'Ethereal':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6800,7 +6800,7 @@ X = level of the defender plus 1.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Force Daggers','Spell':True,'source type':'Attack','Cost':5,'range type':'Ranged','range':[0,1],'dice':1,'effects':{4: ['Stagger']},'Ethereal':True,'Unavoidable':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="1-3 Creatures or Conjurations"/>
@@ -6823,7 +6823,7 @@ Let me demonstrate."
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Forked Lightning','Spell':True,'source type':'Attack','Cost':6,'range type':'Ranged','range':[0,1],'damage type':'Lightning','dice':3,'effects':{7: ['Stagger']},'Sweeping':True,'Ethereal':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6844,7 +6844,7 @@ Let me demonstrate."
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Flying Side Kick','Spell':True,'source type':'Attack','Cost':3,'range type':'Melee','range':[0,0],'dice':3,'Reach':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6865,7 +6865,7 @@ If you do, this attack rolls 2 additional attack dice.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Gale Burst','Spell':True,'source type':'Attack','Cost':5,'range type':'Ranged','range':[0,0],'damage type':'Wind','dice':3,'Ethereal':True,'Target':{'target':{'Traits':['Flying']},'bonus':2}}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6886,7 +6886,7 @@ Gale Burst rolls 2 additional dice versus <b>Flying</b> creatures.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Lightning Jolt','Spell':True,'source type':'Attack','Cost':4,'range type':'Ranged','range':[0,1],'damage type':'Lightning','dice':3,'effects':{5: ['Stagger']},'Ethereal':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6907,7 +6907,7 @@ Gale Burst rolls 2 additional dice versus <b>Flying</b> creatures.</property>
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Piercing Thunderstrike','Spell':True,'source type':'Attack','Cost':6,'range type':'Ranged','range':[0,1],'damage type':'Lightning','dice':4,'effects':{7: ['Stagger']},'Ethereal':True,'Piercing':2}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6928,7 +6928,7 @@ The result was excruciating.</i></property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Projected Leg Sweep','Spell':True,'source type':'Attack','Cost':3,'range type':'Melee','range':[0,0],'dice':3,'effects':{7: ['Stagger']},'Ethereal':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Non-Flying Creature or Conjuration"/>
@@ -6949,7 +6949,7 @@ If you do, gain a +6 to the effect roll.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Projected Palm','Spell':True,'source type':'Attack','Cost':4,'range type':'Ranged','range':[0,0],'dice':3,'effects':{7: ['Stagger']},'Ethereal':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -6970,7 +6970,7 @@ If you do, this attack gains the <b>Unavoidable</b> trait.</property>
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Seismic Burst','Spell':True,'source type':'Attack','Cost':7,'range type':'Ranged','range':[0,1],'dice':4,'effects':{9: ['Stagger']},'Sweeping':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Non-Flying Creature or Conjuration"/>
@@ -6990,7 +6990,7 @@ If you do, this attack gains the <b>Unavoidable</b> trait.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Spray of Barbs','Spell':True,'source type':'Attack','Cost':4,'range type':'Ranged','range':[0,1],'dice':2,'Doublestrike':True,'Piercing':2}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -7010,7 +7010,7 @@ If you do, this attack gains the <b>Unavoidable</b> trait.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Stalagmite','Spell':True,'source type':'Attack','Cost':3,'range type':'Ranged','range':[0,1],'dice':3,'Piercing':3}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Non-Flying Creature or Conjuration"/>
@@ -7030,7 +7030,7 @@ If you do, this attack gains the <b>Unavoidable</b> trait.</property>
 			<property name="Level" value="1"/>
 			<property name="bAttack" value="{'name':'Telekinetic Bolt','Spell':True,'source type':'Attack','Cost':5,'range type':'Ranged','range':[0,2],'dice':4,'effects':{5: ['Stagger']},'Ethereal':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Quick"/>
 			<property name="Range" value="0-2"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -7051,7 +7051,7 @@ If you do, this attack gains the <b>Unavoidable</b> trait.</property>
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Telekinetic Burst','Spell':True,'source type':'Attack','Cost':8,'range type':'Ranged','range':[0,0],'Zone Attack':'Other','dice':3,'effects':{7: ['Stagger']},'Ethereal':True,'Unavoidable':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -7072,7 +7072,7 @@ To be an adept, you must learn to become one with the ripple, feeding it power a
 			<property name="School" value="Fire"/>
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Twin Fireball','Spell':True,'source type':'Attack','Cost':6,'range type':'Ranged','range':[0,1],'damage type':'Flame','dice':3,'effects':{6: ['Burn']},'Sweeping':True}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-1"/>
 			<property name="Target" value="Creature or Conjuration"/>
@@ -7093,7 +7093,7 @@ To be an adept, you must learn to become one with the ripple, feeding it power a
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Twister','Spell':True,'source type':'Attack','Cost':9,'range type':'Ranged','range':[0,0],'Zone Attack':True,'damage type':'Wind','dice':3},'Ethereal':True,'Target':{'target':{'Traits':['Flying']},'bonus':2}}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -7113,7 +7113,7 @@ Twister rolls 2 additional dice versus <b>Flying</b> creatures.</property>
 			<property name="School" value="Fire"/>
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Volley of Flame','Spell':True,'source type':'Attack','Cost':6,'range type':'Ranged','range':[0,0],'Zone Attack':True,'damage type':'Flame','dice':3,'effects':{6: ['Burn']}}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
@@ -7136,7 +7136,7 @@ Total destruction means just that."
 			<property name="Level" value="2"/>
 			<property name="bAttack" value="{'name':'Voltaic Discharge','Spell':True,'source type':'Attack','Cost':6,'range type':'Ranged','range':[0,0],'Zone Attack':True,'damage type':'Lightning','dice':3,'effects':{7: ['Stagger']},'Ethereal':True}"/>
 			<property name="nativeTraits" value="{}"/>
-			<!-- Deck Editor -->
+			
 			<property name="Action" value="Full"/>
 			<property name="Range" value="0-0"/>
 			<property name="Target" value="Zone"/>
