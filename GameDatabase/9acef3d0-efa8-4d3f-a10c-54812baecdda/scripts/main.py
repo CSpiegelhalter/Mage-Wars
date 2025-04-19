@@ -1,365 +1,382 @@
-#######
-#v2.0.0.0#
-#######
-
-"""
-The purpose of this module is to contain the bulk of the non-action code. I want to migrate the code not related to group/cardactions to this file.
-"""
-
-import time
-import re
-import sys
-sys.path.append(wd("lib"))
-import os
-from math import factorial
-from copy import deepcopy
-from random import randint
-
-def useUntargetedAbility(card, x=0, y=0):
+def publicChatMsg(string):
 	mute()
-	debug(card.nickname)
-	#debug(str(card.subtypes))
+	gameHost = Player(int(getGlobalVariable("GameHostID")))
+	gameLog = getGlobalVariable('GameLog')
+	notify("{}".format(string))
+	if me == gameHost: 
+		gameLog += string + "\n"
+		setGlobalVariable('GameLog',str(gameLog))
+	return
 
-def testFormatting(card,x=0,y=0): #delete this function later
-	formatCardObject(card)
+def debug(str):
+	mute()
+	global debugMode
+	if debugMode:
+		whisper("Debug Msg: {}".format(str))
+	return
 
-def pSub(card):
-	return {"M" : "he", "F" : "she"}.get(card.gender,"it")
+def toggleDebug(group, x=0, y=0):
+	global debugMode
+	debugMode = not debugMode
+	if debugMode:
+		notify("{} turns on debug\n".format(me))
+	else:
+		notify("{} turns off debug\n".format(me))
+	return
 
-def pObj(card):
-	return {"M" : "him", "F" : "her"}.get(card.gender,"it")
+def onCardDoubleClicked(args):
+	#args = card, mouseButton, keysDown
+	mute()
+	if args.card.type == "DiceRoll":
+		genericAttack(0)
 
-def pPos(card):
-	return {"M" : "his", "F" : "her"}.get(card.gender,"its")
+def listenForClick(arg):
+	global passOnClick
+	whisper(arg.get("Click Prompt","Left click to select target"))
+	passOnClick = arg
 
-def pRef(card):
-	return {"M" : "himself", "F" : "herself"}.get(card.gender,"itself")
+def onCardClicked(args):
+	#args = card, mouseButton, keysDown
+	mute()
+	return
 
-"""
-Here is how to format the relevant new XML properties:
+def getEventList(roundOrTurn):
+		return (eval(getGlobalVariable("roundEventList")) if roundOrTurn =='Round' else eval(getGlobalVariable("turnEventList")))
 
-For targeting:
-"Flying, Living Conjuration or Non-Mage Creature" === <property name="cTargets" value="m0,M2))tFlying,tLiving,TConjuration||!SMage,TCreature" />
+def setEventList(roundOrTurn,eventList):
+		if roundOrTurn =='Round': setGlobalVariable("roundEventList",str(eventList))
+		else: setGlobalVariable("turnEventList",str(eventList))
 
-note use of )) (range separator) and || (OR operator)
+def appendEventList(roundOrTurn,event):
+		eventList = getEventList(roundOrTurn)
+		eventList.append(event)
+		setEventList(roundOrTurn,str(eventList))
 
-Range of spell given by
-	m - minimum range
-	M - maximum range
-assumes infinite range (e.g. arena) if not specified
+def getMage():
+	mageDict = eval(me.getGlobalVariable("MageDict"))
+	mage = Card(mageDict['MageID'])
+	return mage
 
-Can specify zone as a target via "_Zone"
-Can specify facedown via "_Facedown" or any facing via "_Anyfacing"
+def getMageStats():
+	mageDict = eval(me.getGlobalVariable("MageDict"))
+	mageStats = Card(mageDict['MageStatsID'])
+	return mageStats
 
-For simple buffs:
-
-<property name="cBuffs" value="m0,M1))@Self,tFlying,tLiving,TConjuration,[Fast;Psychic Immune;Armor+1,||#Y:^Friendly,Other,Cat,[mPiercing +1" />
-
-prefixes:
-	@ - self, target, or all. Assumes all if not specified.
-	[ - the type of buff granted to objects that qualify
-	t - trait possessed
-	! - NOT operator
-	T - type of card
-	S - subtype possessed
-	^ - alignment (friendly vs controlled vs enemy)
-	l - min level (can also use for minor flag)
-	L - max level
-	s - school possessed
-
-For infinite range buffs, use inf))
-
-
-"""
-
-def statsParser(stringList):
-	#Parses sets of "key=value" formatted strings and returns a dictionary
-	output = {}
-	for s in stringList:
-		pair = s.split("=")
-		try: output[pair[0]] = int(pair[1])
-		except: output[pair[0]] = 0
-	return output
-
-def rangeMatcher(source,target,cRangeString):
-	"Returns true if source and target are within range."
-	distance = cardGetDistance(source,target)
-	rangeSet = cRangeString.split(",")
-	minimum = int(rangeSet[0][1:])
-	maximum = int(rangeSet[1][1:])
-	return (minimum <= distance <= maximum)
-
-def targetMatcher(source,target,cTargetString):
-	"This function returns True if the target given satisfies the conditions in cTargetString (which should be given without range requirements)"
-	candLists = cTargetString.split("||")
-	if "" in candLists: candLists.remove("")
-	if candLists:
-		debug("B")
-		for candidate in candLists:
-			disqualified = False
-			reqList = candidate.split(",")
-			for req in reqList:
-				disqualified = not targetReqParser(source,target,req)
-				if disqualified: break
-			if not disqualified: return True
-	return False
-
-def buffMatcher(source,target,cBuffString):
-	"This function returns a buff if the target given satisfies the conditions in cBuffString (which should be given without range requirements)"
-	candLists = cBuffString.split("||")
-	if "" in candLists: candLists.remove("")
-	if candLists:
-		for candidate in candLists:
-			buff = []
-			disqualified = False
-			reqList = candidate.split(",")
-			for req in reqList:
-				if req[0] == "[": buff.extend(req[1:].split(";"))
-				else: disqualified = not targetReqParser(source,target,req)
-				if disqualified: break
-			if not disqualified:
-				return buff
-	return []
-
-def targetReqParser(source,target,req):
-	"This parses a single requirement for targetMatcher to see if it is satisfied by card."
-	notFlag = False
-	tagPos = 0
-	tag = req[0]
-	if tag == "!":
-		notFlag = True
-		tag = req[1]
-		tagPos = 1
-	value = req[tagPos+1:]
-	satisfies = False
-	#Checks for each type of tag
-	if tag == "t": satisfies = (value in getAllTraits(target))
-	elif tag == "@": satisfies = (
-		(value=="self" and source == target ) or
-		(value == "all") or
-		(value == "target" and getAttachTarget(source) == target)
-	)
-	elif tag == "T": satisfies = (value == target.Type)
-	elif tag == "S": satisfies = (value in target.Subtype) #In the future, will need to make a getAllSubtypes function to handle effects that can change subtypes, such as zombie tokens.
-	elif tag == "s": satisfies = (value in target.School)
-	elif tag == "_": satisfies = False #For now. Will change later.
-	elif tag == "^": satisfies = ((value in ["friendly","controlled"]) == (target.controller == source.controller)) #A temporary placeholder until we get alignment working.
-	if notFlag: satisfies = not satisfies
-	debug(source.Name+" "+target.Name+" "+tag+" "+value+" "+str(satisfies))
-	return satisfies
-
-def getAllTraits(card):
-	return getBasicTraits(card)
-	#	In the future, this function will calculate every single trait of the card (even those not listed in its xml,
-	#	much like computeTraits does now. For now, I will leave it as this placeholder.
-
-###For now, let's store the targeting features here. Will need to move them in future.
-
-######################################
-######       Transactions       ######
-######################################
-
-def transaction(player,delta):
-	"Handles mana transactions, changing the value of player's by delta as long as it does not drop below 0. Returns whether the transaction succeeded."
-	if canTransact(player,delta):
-		player.Mana += delta
+def checkForSirenMage():
+	mage = getMage()
+	if mage.name == 'Siren':
 		return True
-	return False
-
-def canTransact(player,delta):
-	return (player.Mana-delta >= 0)
-
-######################################
-######   Turn Order Functions   ######
-######################################
-
-"Functions for handling turn order"
-
-def establishTurnOrder():
-	"The calling player chooses a turn order for all players"
-	pass
-
-def getTurnOrder():
-	"""
-	Retrieves the current turn order as a list of all player objects in order, with the current player first
-	Use getTurnOrder()[0] to get the first player
-	"""
-	debug("getTurnOrder()")
-	return getPlayers() #TEMPORARY! Todo: implament turn order. For now, we will just use the id list
-
-######################################
-######     Memory Functions     ######
-######################################
-
-"""
-These functions are for keeping track of what has happened so far this round.
-Events are stored as dictionaries containing all relevant parameters. Example:
-{"Round Number": 3,
- "Event Type" : "Attack",
- "Attacker": 65521,
- "Defender": 52234,
- "Damage Inflicted": 4,
- "Additional Strikes Remaining": 2}
- etc. I have not worked out whether or not OCTGN can handle storing dictionary objects (as opposed to dictionaries as strings),
- so that is something that is important to test.
- In contrast to the previous method of storing events, there will be only one list, and it will contain all the events that have occured in the entire game.
-
-BUFF FORMAT
-
-		"round": 		int(getGlobalVariable("RoundNumber"))	int
-		"type": 		"buff",									str ("buff")
-		"card id":		card._id,								int
-		"traits":		traits,									list
-		"duration":		duration								str ("round","game","turn")
-
-"""
-
-def storeEvent(arg):
-	arg["round"] = int(getGlobalVariable("RoundNumber"))
-	memory = eval(getGlobalVariable("gameMemory"))
-	memory.append(arg)
-	setGlobalVariable("gameMemory",str(memory))
-
-'''#This function doesn't... function. It might get deleted in the future once I can confirm that nothing actually calls it'''
-def timesHasOccurred(event,keys): #Searches memory for instances of this event that have occurred. Only registers a match if all given keys match those from a remembered instance. Returns number of matches
-	event["round"] = int(getGlobalVariable("RoundNumber"))
-	memory = eval(getGlobalVariable("gameMemory"))
-	#Check how many events this round match in the given keys
-	return len([1 for e in memory if len([1 for k in keys if e.get(k)==event[k]])==len(keys)])
-	
-def timesHasOccured(event,player=me):
-		eventList = getEventList('Round')
-		count = 0
-		for e in eventList:
-				if e[0] == 'Event' and e[1][0] == player._id and e[1][1]==event: count += 1
-		return count
-
-def getEvents(round):
-	"Returns an ordered list of all events from the requested round"
-	memory = eval(getGlobalVariable("gameMemory"))
-	memory = [m for m in memory if m.get("round")==round]
-	return memory
-
-######################################
-######     Recall Functions     ######
-######################################
-
-def rememberBuffs(card):
-	"Returns a list of text-formatted traits granted via memorized buffs"
-	memory = eval(getGlobalVariable("gameMemory"))
-	roundNo = int(getGlobalVariable("RoundNumber"))
-
-	cardID = card._id
-	buffs = []
-	extend = buffs.extend
-	for m in memory:
-		get = m.get
-		if (get("type") == "buff"
-			and get("card id") == cardID
-			and ((get("duration") == "round" and get("round") == roundNo) or get("duration") == "game")
-		): extend(get("traits",[]))
-	return buffs
-
-######################################
-######        Targeting         ######
-######################################
-
-#Will probably need to move this.
-
-def isValidAttackSource(card):
-	return canDeclareAttack(card) #We'll just pass the buck for now.
-
-def isValidAttackTarget(card):
-	return ("Life" in card.stats)
-
-def payForAttackSpell(player,attack):
-	"Returns boolean for whether or not cost was paid"
-	originalSource = Card(attack.get('OriginalSourceID'))
-	if originalSource.Type == "Attack": return castSpell(originalSource)
 	else:
-		cost = attack.get('Cost')
-		realCost = askInteger('Enter amount to pay for {}'.format(attack.get('Name')),cost)
-		if realCost == None: return False
-		else: return transaction(player,-realCost)
+		return False
 
-def targetMenu(source,target):
-	"This will be a general function determining what happens when one card targets another, regardless of the method."
-	#args = player,fromCard,toCard,targeted,scripted
+def forceCardsWithDissipate():
+	cardList = []
+	for card in table:
+		if card.markers[Dissipate] and 'Force' in card.Subtype and card.controller == me:
+			cardList.append(card)
+	return cardList
+
+def getCard(desiredCard):
+	for card in table:
+		if card.name == desiredCard:
+			return card
+	return None
+
+def get_all_cards_of_name(desiredCard):
+	cardList = [card for card in table if card.name == desiredCard]
+	return cardList
+
+def createCard(group,x=0,y=0):
 	mute()
-	if not source and target: return
-
-	if isValidAttackSource(source) and isValidAttackTarget(target) and getSetting('BattleCalculator',True):
-		aTraitDict = computeTraits(source)
-		dTraitDict = computeTraits(target)
-		diceRollMenu(source,target)
-		#attack = attackChoicePrompt(source,target)#
-		#if attack:
-		#	if attack.get("Cost") and not payForAttackSpell(me,attack): return
-		#	if attack.get('SourceID')==source._id:
-		#		remoteCall(target.controller,'initializeAttackSequence',[aTraitDict,attack,dTraitDict])
-		#		source.arrow(target,False)
-		#		return
-		#	elif attack.get("Dice"):
-		#		notify("Attack cannot be parsed by Battle Calculator; rolling dice manually.")
-		#		rollDice(attack.get("Dice"))
-		#		source.arrow(target,False)
-		#		return
-	else:
-		if source.Type == "Enchantment" and not source.isFaceUp and castSpell(source,target):
-			attach(source,target)
-			source.arrow(target,False)
-		elif target.Type in typeIgnoreList or target.Name in typeIgnoreList or target.Type == "Magestats":
-			mute()
-			notify("{} is not a legal target".format(target.Name))
-			source.arrow(target,False)
-		elif source.Type !="Enchantment":
-			castSpell(source,target) #Assume that player wants to cast card on target
-			source.arrow(target,False)
+	global debugMode
+	cardName = askString("Create which card?","Enter card name here")
+	guid,quantity = askCard({'Name':cardName},title="Select card version and quantity")
+	if guid and quantity:
+		cards = ([table.create(guid,0,0,1,True)] if quantity == 1 else table.create(guid,0,0,quantity,True))
+		for card in cards:
+			card.moveTo(me.piles["Spellbook"])
+			if not debugMode:
+				notify("*** WARNING *** - Spellbook is no longer validated\n")
+			notify("A {} was created and was placed into {}'s spellbook.\n".format(card, me))
 
 def boolQuery(query_text,true_text,false_text): # string -> string -> string -> bool
 	"""A generic boolean query menu with customizable text for both options"""
 	if askChoice(query_text,[true_text,false_text],["#009933","#ff0000"]) == 1: return True
 	return False
 
-def listQuery(query_text,list,to_text,to_color): # string -> list<T> -> ( Option<T> -> string ) -> ( Option<T> -> color ) -> Option<T>
-	"""Takes a list and two functions. One function converts an element in the list into a string, the other converts to a color. Returns the selected element of the list."""
-	options = [to_text(e) for e in list] + [to_text(None)]
-	colors = [to_color(e) for e in list] + [to_color(None)]
-	choice = askChoice(query_text,options,colors)
-	if 0 < choice < len(options): return list[choice-1]
+def getElementals(mage):
+	elementalList = []
+	for card in table:
+		if card.isFaceUp and card.controller == mage.controller and 'Elemental' in card.Subtype:
+			elementalList.append(card)
+		elif card.isFaceUp and card.controller == mage.controller and 'Golem' in card.Subtype:
+			elementalList.append(card)
+		elif card.isFaceUp and card.controller == mage.controller and 'Sprite' in card.Subtype:
+			elementalList.append(card)
+	return elementalList
 
-def publicChatMsg(string):
-	mute()
-	gameHost = Player(int(getGlobalVariable("GameHostID")))
-	gameLog = eval(getGlobalVariable('GameLog'))
-	notify("{}".format(string))
-	if me == gameHost: 
-		gameLog.append(string + "\n")
-		setGlobalVariable('GameLog',str(gameLog))
+def create_card_dialog(list, title, min = 1, max = 1):
+	dialog = cardDlg(list)
+	dialog.min = min
+	dialog.max = max
+	dialog.title = title
+	selectedList = dialog.show()
+	return selectedList
 
-def privateChatMsg(string):
-	mute()
-	gameLog = eval(getGlobalVariable('GameLog'))
-	whisper("{}".format(string))
-	gameLog.append(string + "\n")
-	setGlobalVariable('GameLog',str(gameLog))
+def create_double_list_dialog(list1,list2, title,label, bottom_label, min = 1, max = 1):
+	dialog = cardDlg(list1, list2)
+	dialog.label = label
+	dialog.bottomLabel = bottom_label
+	dialog.title = title
+	return dialog
 
-def debugMsg(string):
+def damage_transfer(transfer_from_target, transfer_to_target, source = 'Lifebond', amount = 2):
+    transfer_from_target = transfer_from_target[0]
+    transfer_to_target = transfer_to_target[0]
+    damage_transferred_input = min(askInteger('How much damage would you like to transfer?', amount), amount)
+    max_damage_transferred = get_total_damage_markers(transfer_from_target)
+    damage_transferred = min(damage_transferred_input, max_damage_transferred)
+    notify('{} uses {} to transfer {} damage from {} to {}!'.format(me,source, damage_transferred, transfer_from_target, transfer_to_target))
+    subDamageAmount(transfer_from_target, damage_transferred)
+    addDamageAmount(transfer_to_target, damage_transferred)
+    return
+
+def malakaisFirePrompt(heathen):
 	mute()
-	global debugMode
-	if debugMode:
-			gameLog = eval(getGlobalVariable('GameLog'))
-			whisper("Debug Msg: {}".format(string))
-			gameLog.append(string + "\n")
-			setGlobalVariable('GameLog',str(gameLog))
-			
-def getCardLevel(card):
+	if askChoice("Smite the heathen with Malakai's Fire?",["Yes, burn the heathen!","No"],["#01603e","#de2827"])==1:
+		notify("{} Smites the heathen {} with Malakai's Fire!\n".format(me,heathen))
+		rememberPlayerEvent("Malakai's Fire")
+		remoteCall(heathen.controller,"malakaisFireReceiptPrompt",[heathen])
+
+def malakaisFireReceiptPrompt(heathen):
+	mute()
+	if askChoice("Malakai smites {}! Apply Burn condition?".format(heathen.Name.split(",")[0]),["Yes","No"],["#01603e","#de2827"])==1:
+		heathen.markers[Burn]+=1
+		bookOfMalakai=["...AND THE HEATHENS IN THEIR TREACHERY DOTH BURN LIKE CANDLES, SPAKE MALAKAI. AND LO, SO THEY DID BURN.\n- The book of Malakai, 16:3",
+					"...AND HE LIT A THOUSAND FIRES BENEATH THE FOUL. AND MALAKAI SAW THAT IT WAS JUST.\n- The book of Malakai, 19:25",
+					"...LET HE WHO JUDGETH WITH NO CAUSE BE JUDGED FIRST. AND THEN BURN HIM.\n-The book of Malakai, 4:22",
+					"...BEHOLD YE, FOR THIS IS THE FLAME OF RIGHTEOUSNESS. SEE THAT IT BURNETH EVERMORE IN YOUR HEART. AND ALSO IN THE HEARTS OF THE UNBELIEVERS, BUT IN A MORE LITERAL SENSE.\n-The book of Malakai, 5:18",
+					"...FOR I AM THE CANDLE IN THE DARK. THE FEAR IN THE EYES OF THE UNJUST. THE BANE OF THE IMPURE.\n-The book of Malakai, 8:9",
+					"...ALL WHO KNEEL BEFORE EVIL SHALL CLAIM THE FIRE OF WRATH AS THEIR REWARD. AS WILL THE EVIL THEMSELVES. REALLY, THOU SHOULDST NOT DISCRIMINATE IN ITS DISTRIBUTION.\n-The book of Malakai, 3:19",
+					"...AND MALAKAI GESTURED AT THE LADDINITES, AND LO! EACH BECAME A PILLAR OF FLAME, THEIR WICKEDNESS BURNING BRIGHTER THAN THE SUN.\n-The book of Malakai, 2:4",
+					"...AND MALAKAI DID SEE THAT THEY HAD VERILY REPENTED. AND PROCLAIMING THAT SOME CRIMES ARE FORGIVEN BUT THROUGH FLAME, HE SEARED THEIR WICKEDNESS FROM THEIR BONES.\n-The book of Malakai, 8:7",
+					"... AND I WILL STRIKE DOWN UPON THEE WITH GREAT VENGEANCE AND FURIOUS ANGER THOSE WHO ATTEMPT TO POISON AND DESTROY MY BROTHERS. AND YOU WILL KNOW MY NAME IS MALAKAI WHEN I LAY MY LIGHT UPON THEE \n-The book of Malakai, 25:17"]
+		passage=rnd(0,len(bookOfMalakai)-1)
+		notify(bookOfMalakai[passage])
+		notify("{} is seared by the flames of righteousness! (+1 Burn)\n".format(heathen.Name.split(",")[0]))
+
+def determine_crumble_cost(params):
+	target = params.get('target')
+	cost = int(target.Cost)
+	return cost
+
+def determine_dissolve_cost(params):
+	target = params.get('target')
+	equipmentList = get_faceup_equipment_list(target)
+	selectedList = create_card_dialog(equipmentList, 'What would you like to Dissolve?', 0, 1)
+	cost =0
+	if selectedList:
+		equipmentChoice = selectedList[0]
+		notify('{} cast Dissolve on {}'.format(me, equipmentChoice.name))
+		equipmentChoice.target()
+		cost = int(equipmentChoice.Cost)
+		return cost, equipmentChoice
+	return cost, None
+
+def determine_explode_cost(params):
+	target = params.get('target')
+	equipmentList = get_faceup_equipment_list(target)
+	selectedList = create_card_dialog(equipmentList, 'What would you like to explode?', 0, 1)
+	cost =0
+	if selectedList:
+		equipmentChoice = selectedList[0]
+		notify('{} casts Explode on {}'.format(me, equipmentChoice.name))
+		equipmentChoice.target()
+		cost = int(equipmentChoice.Cost) + 6
+		return cost, equipmentChoice
+	return cost, None
+
+def determine_steal_equipment_cost(params):
+	target = params.get('target')
+	equipmentList = get_faceup_equipment_list(target)
+	selectedList = create_card_dialog(equipmentList, 'What would you like to steal?', 0, 1)
+	cost = 0
+	if selectedList:
+		equipmentChoice = selectedList[0]
+		notify('{} casts destroys {}'.format(me, equipmentChoice.name))
+		equipmentChoice.target()
+		cost = int(equipmentChoice.Cost)*2
+		return cost, equipmentChoice
+	return cost, None
+
+def determine_disarm_cost(params):
+	target = params.get('target')
+	equipmentList = get_faceup_equipment_list(target)
+	selectedList = create_card_dialog(equipmentList, 'What would you like to Disarm?', 0, 1)
+	cost = 0
+	if selectedList:
+		equipmentChoice = selectedList[0]
+		notify('{} Disarms {}'.format(me, equipmentChoice))
+		equipmentChoice.target()
+		equipmentChoice.markers[Disable] += 1
+		cost = getTotalCardLevel(equipmentChoice)
+	return cost
+
+def get_faceup_equipment_list(target):
+	equipmentList =[]
+	for card in table:
+		if card.Type == 'Equipment' and card.controller == target.controller and card.isFaceUp:
+			equipmentList.append(card)
+	return equipmentList
+
+def determine_defend_cost(params):
+	target = params.get('target')
+	target_level = getTotalCardLevel(target)
+	if target_level <3:
+		cost = 1
+	elif target_level < 5:
+		cost = 2
+	else:
+		cost = 3
+	return cost
+
+def determine_quicksand_cost(params):
+	target = params.get('target')
+	target_level = getTotalCardLevel(target)
+	cost = 2*target_level
+	return cost
+
+def determine_disperse_cost(params):
+	target = params.get('target')
+	cost = int(target.Reveal_Cost)
+	return cost
+
+def determine_fizzle_cost(params):
+	target = params.get('target')
+	cost = int(target.Reveal_Cost)
+	return cost
+
+def determine_dispel_cost(params):
+	target = params.get('target')
+	cost = int(target.Reveal_Cost) + int(target.Cost)
+	return cost
+
+def determine_rouse_cost(params):
+	target = params.get('target')
+	target_level = getTotalCardLevel(target)
+	cost = target_level
+	return cost
+
+def determine_shift_enchant_cost(params):
+	target = params.get('target')
+	if target.isFaceUp:
+		target_level = getTotalCardLevel(target)
+		cost = target_level
+	else:
+		cost =1
+	return cost
+
+def determine_sleep_cost(params):
+	target = params.get('target')
+	target_level = getTotalCardLevel(target)
+	if target_level <2:
+		cost = 4
+	elif target_level < 3:
+		cost = 5
+	elif target_level < 4:
+		cost = 6
+	else:
+		cost = (target_level-3)*2 + 6
+	return cost
+
+def determine_SH_cost(params):
+	target = params.get('target')
+	target_cost = int(target.Cost)
+	attach_list = getAttachedCards(target)
+	attach_cost = 0
+	for card in attach_list:
+		if card.isFaceUp:
+			attach_cost += int(card.Cost)+int(card.Reveal_Cost)
+		else:
+			attach_cost+=2
+	cost = target_cost + attach_cost
+	return cost
+	
+def determine_steal_enchant_cost(params):
+	target = params.get('target')
+	cost = (int(target.Cost) + int(target.Reveal_Cost))*2
+	return cost
+
+def determine_upheaval_cost(params):
+	target = params.get('target')
+	target_cost = int(target.Cost)
+	attach_list = getAttachedCards(target)
+	attach_cost = 0
+	for card in attach_list:
+		if card.isFaceUp and card.Reveal_Cost != '':
+			attach_cost += int(card.Cost)+int(card.Reveal_Cost)
+		elif card.isFaceUp:
+			attach_cost += int(card.Cost)
+		else:
+			attach_cost+=2
+	cost = target_cost + attach_cost
+	return cost
+
+def deathPrompt(card):
 		mute()
-		if not "+" or not "/" in card.Level:
-				cardLevel = int(card.Level)
-		elif "+" in card.Level:
-				cardLevel = eval(card.Level.split)
-		elif "/" in card.Level:
-			level = card.Level.split("/")
-			cardLevel = int(level[0])
-		return cardLevel
+		if not "Mage" in card.Subtype and not card.isDestroyed: 
+			life_total = eval(card.Total_Life if not card.Total_Life == '' else card.Stat_Life)
+			damage_total, sources = get_collected_damage_total(card)
+			choice = askChoice("{} appears to be destoyed. \nCalculated from: \nLife: {} \tDamage: {}{}{}{}. \n\nAccept destruction?".format(card.name, 
+																																		life_total,
+																																		damage_total,
+																																		'\n\tfrom Damage markers: '+str(sources[0]),
+																																		'\n\tfrom Tainted (markers): '+str(sources[1])+'('+str(sources[1]/3)+')' if sources[1] > 0 else '',
+																																		'\n\tfrom Freeze (markers): '+str(sources[2]) +'('+str(sources[1]/2)+')' if sources[2] > 0 else ''),
+							["Yes","No"],
+							["#01603e","#de2827"])
+			if choice == 1:
+				notify('{} is destroyed'.format(card))
+				card.isDestroyed = 'True'
+				discard(card)
+			else: notify("{} does not accept the destruction of {}.\n".format(me,card))
+		elif 'Mage' in card.Subtype:
+			life_total = me.Life
+			damage_total, sources = get_collected_damage_total(card)
+			choice = askChoice("Your {} appears to have fallen in the arena! \nCalculated from: \nLife: {} \tDamage: {}{}{}{}. \n\nAccept Loss?".format(card.name, 
+																																						life_total,
+																																						damage_total,
+																																						'\n\tfrom Damage markers: '+str(sources[0]),
+																																						'\n\tfrom Tainted markers: '+str(sources[1]) if sources[1] > 0 else '',
+																																						'\n\tfrom Freeze markers: '+str(sources[2]) if sources[2] > 0 else ''),
+							["Yes","No"],
+							["#01603e","#de2827"])
+			if choice == 1:
+				card.orientation = 1
+				notify('{} has fallen in the Arena!'.format(me))
+
+def get_collected_damage_total(card):
+	if 'Mage' in card.Subtype:
+		damage_amount = me.Damage
+		damage_total = damage_amount + 3*card.markers[Tainted] + 2*card.markers[Freeze]
+		
+		sources = [damage_amount, 3*card.markers[Tainted], 2*card.markers[Freeze]]
+	else:
+		traits = getTraits(card)
+		damage_amount = card.markers[Damage]
+		if traits.get('Living'):
+			damage_total = card.markers[Damage] + 3*card.markers[Tainted] + 2*card.markers[Freeze]
+			sources = [damage_amount, 3*card.markers[Tainted], 2*card.markers[Freeze]]
+		else:
+			damage_total = card.markers[Damage]
+			sources = [damage_amount, 0, 0]	
+	return damage_total, sources
+
+def get_collected_life_total(card):#Remove maybe? Not used right now
+
+	base_life = eval(card.Stat_Life)
+	
+	traits = getTraits(card)
+	life_adj = traits.get('Life',0)
+	sources = [base_life, life_adj]
+	return sources

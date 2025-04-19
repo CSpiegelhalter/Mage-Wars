@@ -18,7 +18,7 @@ def readScriptTextFile(filename):
 		rawList[n] = text.replace("\n","").replace("^","\n") #Use ^ to indicate a newline in the txt files
 	return rawList
 
-def searchCodex(group, x=0, y=0):
+'''def searchCodex(group, x=0, y=0):
 		rawCodex = readScriptTextFile("Codex")
 		codexDict = {}
 		entry = []
@@ -39,9 +39,9 @@ def searchCodex(group, x=0, y=0):
 						if isNumber(c): term = term.replace(c,'') if numReplaced else term.replace(c,'X')
 				if (codexDict.get(term) and askChoice("{}:\n{}".format(term,codexDict.get(term)),
 													  ['Search for another term','Thanks, I\'m done'],
-													  ['#666699','#000000']) != 1): break
+													  ['#666699','#000000']) != 1): break'''
 
-def getRulingsAndClarifications(card, x=0, y=0):
+'''def getRulingsAndClarifications(card, x=0, y=0):
 		if not (card.isFaceUp or card.controller == me):
 				whisper('You do not have permission to view that card')
 				return
@@ -59,14 +59,14 @@ def getRulingsAndClarifications(card, x=0, y=0):
 				else: entry.append(line.replace('\n','').strip(' '))
 		askChoice("This spell does not appear to have any rulings or clarifications. Let us know if there is a clarfication or ruling that you would like to see added!"
 				  ,['Done']
-				  ,['#000000'])
+				  ,['#000000'])'''
 
-def isNumber(s):
+'''def isNumber(s):
 	try:
 		float(s)
 		return True
 	except ValueError:
-		return False
+		return False'''
 
 def getEnchantRecommendationList(step):
 		"""Returns a list of names of recommended enchantments to reveal"""

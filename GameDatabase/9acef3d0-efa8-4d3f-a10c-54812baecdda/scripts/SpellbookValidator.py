@@ -8,14 +8,22 @@ def validateDeck(deck):
 	if mageStatCard == "Your deck is missing a Magestats card.":
 		notify(mageStatCard)
 	else:
-		calculatedSpellbookPointTotal = createSpellbookAndCheck(deck, mageStatCard)
-		notify("Spellbook of {} calculated to {} points".format(me,calculatedSpellbookPointTotal))
-	return True
+		spellbookPointFlag, countFlag, mageSchoolFlag = createSpellbookAndCheck(deck, mageStatCard)
+	#debug('countFlag: '+str(countFlag))
+	#debug('mageSchoolFlag: '+str(mageSchoolFlag))
+	#debug('spellbookPointFlag: '+str(spellbookPointFlag))
+	if countFlag or mageSchoolFlag or spellbookPointFlag:
+		return False
+	else:
+		return True
 
 def findMageStatCard(deck):
 	mute()
 	for card in deck:
 		if card.Type == 'Magestats':
+			return card
+	for card in table:
+		if card.controller == me and card.Type == 'Magestats':
 			return card
 	return "Your deck is missing a Magestats card."
 
@@ -25,40 +33,42 @@ def createSpellbookAndCheck(deck, mageStatCard):
 	totalBookPointsCost = 0
 	for card in deck: #run through deck adding levels and checking counts
 		if not ("Mage" in card.Subtype or "Magestats" in card.Subtype or "Aura" in card.Subtype or "Talos" in card.Name):#None of these cards cost points to include
-			debug(card.Name)
+			#debug(card.Name)
 			totalBookPointsCost += countCardPointCost(mageStatCard, card)
-			debug(totalBookPointsCost)
-
-			#This creates a Dict to count and check limits on all the non-Mage and non-Magestats cards.
-			checkCounts(card, cardDict)
-			
-			checkForMageSchoolRestrictionViolation(mageStatCard, card)
-
-	return totalBookPointsCost
+			#debug(totalBookPointsCost)
+			cardDict = addCardToCardDict(card, cardDict)
+	##debug(cardDict)
+	notify("Spellbook of {} calculated to {} points".format(me,totalBookPointsCost))
+	if totalBookPointsCost > int(mageStatCard.Stat_SpellBookPoints):
+		spellbookPointFlag = True
+	else:
+		spellbookPointFlag = False
+	countFlag, mageSchoolFlag = checkRestriction(mageStatCard, cardDict)
+	return spellbookPointFlag, countFlag, mageSchoolFlag
 
 def countCardPointCost(mageStatCard, card):
 	cardPointsCost = 0
 	totalCardLevel = getTotalCardLevel(card)
 	if isNovice(card):
-		debug('Novice')
+		#debug('Novice')
 		cardPointsCost += addPoints('trained', totalCardLevel)
 	elif isCardCombo(mageStatCard, card):
-		debug('Combo')
+		#debug('Combo')
 		cardPointsCost += addPoints('trained', totalCardLevel)
 	elif isSubtypeInTraining(mageStatCard, card):
-		debug('Subtype')
+		#debug('Subtype')
 		cardPointsCost += addPoints('trained', totalCardLevel)
 	elif compareToPartialTraining(mageStatCard, card):
-		debug('Partial')
+		#debug('Partial')
 		cardPointsCost += partialTrainingPointsToAdd(mageStatCard, card)
 	elif (hasSchoolMatch(mageStatCard.MageSchoolFullTraining, card)) or (hasSchoolMatch(mageStatCard.MageSchoolOpposed, card)):
-		debug('Full or OpposedMatch')
+		#debug('Full or OpposedMatch')
 		cardPointsCost += addPointsBasedOnFullSchoolTraining(mageStatCard, card)
 	elif isOpposedCardType(mageStatCard, card):
-		debug('Opposed Type Match')
+		#debug('Opposed Type Match')
 		cardPointsCost += addPoints('opposed', totalCardLevel)
 	else:
-		debug('No Train or Opposed')
+		#debug('No Train or Opposed')
 		cardPointsCost += addPoints('neutral', totalCardLevel)
 	return cardPointsCost
 
@@ -92,12 +102,6 @@ def isOpposedCardType(mageStatCard, card):
 	else:
 		return False
 
-'''def isOpposedCardType(mageTypeOpposed, card):
-	cardType = card.Type.replace(' ','').split(',')
-	if mageTypeOpposed in cardType:
-		return	True
-	else:
-		return False'''
 
 #Still some refactoring to do here
 def addPointsBasedOnFullSchoolTraining(mageStatCard, card):
@@ -215,7 +219,7 @@ def isCardCombo(mageStatCard, card):
 
 
 def isNovice(card):
-    if "Novice" in card.Traits:
+    if "Novice" in card.nativeTraits:
         return True
     else:
         return False
@@ -233,32 +237,46 @@ def getTotalCardLevel(card):
 		totalCardLevel = int(card.Level)
 	return totalCardLevel
 
-
-def checkCounts(card, cardDict):
-	mute()
-	cardDict = addCardToCardDict(card, cardDict)
-	level = getTotalCardLevel(card)
-	if "Epic" in card.Traits and cardDict[card.Name]>1:
-		notify("***ILLEGAL DECK***: multiple copies of Epic card {} found in spellbook".format(card.Name))
-		return False
-	elif level == 1 and cardDict[card.Name]>6:
-		notify("***ILLEGAL DECK***: there are too many copies of {} in {}'s Spellbook.".format(card.Name, me))
-		return False
-	elif level > 1 and cardDict[card.Name]>4:
-		notify("***ILLEGAL DECK***: there are too many copies of {} in {}'s Spellbook.".format(card.Name, me))
-		return False
-
 def addCardToCardDict(card, cardDict):
 	mute()
+	#FORMAT cardDict = {card.Name:[{card},cardCount}]
 	if card.Name in cardDict:
-		cardDict[card.Name]+=1
+		cardDict[card.Name][1]+=1
 	else:
-		cardDict[card.Name]=1
+		cardDict[card.Name]=[card, 1]
 	return cardDict
 
+def checkRestriction(mageStatCard, cardDict):
+	mute()
+	countFlag = False
+	mageSchoolFlag = False
+	for cardName in cardDict:
+		card = cardDict[cardName][0]
+		cardCount = cardDict[cardName][1]
+		currentCountFlag = checkCardCount(card, cardCount)
+		currentMageSchoolFlag = checkForMageSchoolRestrictionViolation(mageStatCard, card)
+		if currentCountFlag:
+			countFlag = True
+		if currentMageSchoolFlag:
+			mageSchoolFlag = True
+	return countFlag, mageSchoolFlag
+
+def checkCardCount(card, cardCount):
+	level = getTotalCardLevel(card)
+	if "Epic" in card.nativeTraits and cardCount>1:
+		notify("***ILLEGAL DECK***: multiple copies of Epic card {} found in spellbook".format(card.Name))
+		return True
+	elif level == 1 and cardCount>6:
+		notify("***ILLEGAL DECK***: there are too many copies of {} in {}'s Spellbook.".format(card.Name, me))
+		return True
+	elif level > 1 and cardCount>4:
+		notify("***ILLEGAL DECK***: there are too many copies of {} in {}'s Spellbook.".format(card.Name, me))
+		return True
+	return False
+
 def checkForMageSchoolRestrictionViolation(mageStatCard, card):
-	if "Only" in card.Traits:
-		mageRestrictionName = mageStatCard.Nickname.replace(' ','').split('Stats')[0]
+	if "Only" in card.nativeTraits:
+		mageRestrictionName = mageStatCard.Name.replace(' ','').split('Stats')[0]
 		if isCorrectMage(card, mageRestrictionName) or isCorrectSchool(mageStatCard, card):
 			return False
 		else:
@@ -268,7 +286,7 @@ def checkForMageSchoolRestrictionViolation(mageStatCard, card):
 
 def isCorrectMage(card, name):
 	legal = False
-	if name+" Only" in card.Traits:
+	if name+" Only" in card.nativeTraits:
 		legal = True
 	return legal
 
