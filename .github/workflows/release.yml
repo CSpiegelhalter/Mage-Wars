@@ -1,25 +1,46 @@
-name: Package and Upload OCTGN Game
+name: Package and Push OCTGN Plugin to MyGet
 
 on:
   push:
-    branches: [master]  # Or 'tags' if you prefer version-based releases
+    branches: [master]
 
 jobs:
-  package:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Create OCTGN .o8g package
+      - name: Install NuGet CLI
+        run: |
+          sudo apt update
+          sudo apt install -y nuget
+
+      - name: Create .o8g file
         run: |
           mkdir -p build
           zip -r build/MageWars.o8g GameDatabase Template DeckBuilder -x "*.git*" "*.DS_Store"
 
-      - name: Upload to MyGet (via curl)
+      - name: Create .nuspec file
         run: |
-          curl -X PUT \
-            -H "Authorization: Bearer ${{ secrets.MYGET_API_KEY }}" \
-            -F "package=@build/MageWars.o8g" \
-            https://www.myget.org/F/testfeed_simple/api/v2/package
+          cat <<EOF > MageWars.nuspec
+          <?xml version="1.0"?>
+          <package>
+            <metadata>
+              <id>MageWars</id>
+              <version>1.0.0</version>
+              <authors>Curt</authors>
+              <description>Mage Wars OCTGN plugin</description>
+            </metadata>
+            <files>
+              <file src="build/MageWars.o8g" target="content/MageWars.o8g" />
+            </files>
+          </package>
+          EOF
+
+      - name: Pack NuGet package
+        run: nuget pack MageWars.nuspec
+
+      - name: Push to MyGet
+        run: nuget push MageWars.1.0.0.nupkg ${{ secrets.MYGET_API_KEY }} -Source https://www.myget.org/F/testfeed_simple/api/v2/package
