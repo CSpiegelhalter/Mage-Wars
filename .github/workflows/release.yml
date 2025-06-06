@@ -1,0 +1,25 @@
+name: Package and Upload OCTGN Game
+
+on:
+  push:
+    branches: [master]  # Or 'tags' if you prefer version-based releases
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Create OCTGN .o8g package
+        run: |
+          mkdir -p build
+          zip -r build/MageWars.o8g GameDatabase Template DeckBuilder -x "*.git*" "*.DS_Store"
+
+      - name: Upload to MyGet (via curl)
+        run: |
+          curl -X PUT \
+            -H "Authorization: Bearer ${{ secrets.MYGET_API_KEY }}" \
+            -F "package=@build/MageWars.o8g" \
+            https://www.myget.org/F/testfeed_simple/api/v2/package
