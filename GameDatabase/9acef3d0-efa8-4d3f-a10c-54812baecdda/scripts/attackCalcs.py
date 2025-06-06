@@ -17,7 +17,6 @@ def canDeclareHeal(card):
         for attack in attackList:
             if attack.get('Heal'):
                 canHeal = True
-
     return canHeal
 
 def canDeclareReconstruct(card):
