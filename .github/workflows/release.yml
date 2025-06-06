@@ -14,8 +14,7 @@ jobs:
 
       - name: Install NuGet CLI
         run: |
-          sudo apt update
-          sudo apt install -y nuget
+          curl -L https://dist.nuget.org/win-x86-commandline/latest/nuget.exe -o nuget.exe
 
       - name: Create .o8g file
         run: |
@@ -40,7 +39,7 @@ jobs:
           EOF
 
       - name: Pack NuGet package
-        run: nuget pack MageWars.nuspec
+        run: mono nuget.exe pack MageWars.nuspec
 
       - name: Push to MyGet
-        run: nuget push MageWars.1.0.0.nupkg ${{ secrets.MYGET_API_KEY }} -Source https://www.myget.org/F/testfeed_simple/api/v2/package
+        run: mono nuget.exe push MageWars.1.0.0.nupkg ${{ secrets.MYGET_API_KEY }} -Source https://www.myget.org/F/testfeed_simple/api/v2/package
