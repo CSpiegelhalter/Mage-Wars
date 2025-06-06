@@ -6,9 +6,10 @@
 ##########################      Codex		   #######################################
 ############################################################################
 import sys
+import secrets
+
 sys.path.append(wd("lib"))
 import os
-import random
 
 def readScriptTextFile(filename):
 	"Takes a .txt file from the scriptText directory and returns a list of each line in that file."
@@ -228,5 +229,5 @@ def mageRevealMessage(mage): # Card -> None
 			if line[0] == "#": continue
 			elif line[0] == "@": valid_message = (content == name)
 			elif line[0] == ">" and valid_message: append(content)
-	if messages: notify(random.choice(messages))
+	if messages: notify(secrets.choice(messages))
 	else: notify("The {} is ready to fight!".format(mage.Nickname))
